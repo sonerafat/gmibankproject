@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class GmiBankPage {
-
+    //This is a trial
     public GmiBankPage() {
         PageFactory.initElements(Driver.getDriver(), this);}
 
