@@ -7,7 +7,6 @@ Feature: Go to homepage
             And user clik to register box
             And user clik to register button
             And user clik to SSn number box and send "454-42-12230"
-            Then message of "Your SSN is invalid" is not displayed
             And user click to first name box and send "Hans"
             And user click to last name box and send "Kern"
             And user click to address box and send "Ernst Straße 2, 17299 Hamburg"

@@ -31,20 +31,7 @@ RegistrationPage gmiBankPage = new RegistrationPage();
     Driver.waitAndSendText(gmiBankPage.ssnBox,ssn, 5);
     }
 
-    @Then("message of {string} is not displayed")
-    public void message_of_is_not_displayed(String string) {
-        Driver.wait(4);
-        try{
-        WebElement message = Driver.getDriver().findElement(By.xpath("//*[text()='"+string+"']"));
-            System.out.println(message.getText());
-        Assert.assertFalse(message.isDisplayed());
 
-        }catch(Exception e){
-
-        }
-     //   Assert.assertFalse(Driver.getDriver().findElement(By.xpath("//*[text()='"+string+"']")));
-
-    }
 
     @Given("user click to first name box and send {string}")
     public void user_click_to_first_name_box_and_send(String firstName) {
