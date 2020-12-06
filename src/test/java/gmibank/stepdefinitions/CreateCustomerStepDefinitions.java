@@ -101,12 +101,12 @@ customerPage.link_manage_customer.click();
     public void selectUserFromCustomerForm() {
         // Driver.selectRandomTextFromDropdown();
 
-        Driver.selectDropdown(customerPage.userForm,3);
+        Driver.selectDropdown(customerPage.userForm,5);
     }
 
     @And("select  account from customer form")
     public void selectAccountFromCustomerForm() {
-        Driver.selectDropdown(customerPage.accountForm,4);
+        Driver.selectDropdown(customerPage.accountForm,2);
     }
 
     @Then("click to save button into customer form")
