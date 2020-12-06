@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.329">
+<testcase classname="Go to login" name="Create new customer" time="18.729">
+<system-out><![CDATA[Given user click to login icon..............................................passed
+And user click link sign in.................................................passed
+And user enter username as  "team21employee"................................passed
+And user enter password as  "team21Employee"................................passed
+And user click to sign in button............................................passed
+And user click to my operations link........................................passed
+And user clcik to manage customer...........................................passed
+And user click to button create new customer................................passed
+And put  "hakan" into create firstname form.................................passed
+And put "sukur" into create lastname form...................................passed
+And put "S" into middle initial customer form...............................passed
+And put "info@fmail.com" into mail customer form............................passed
+And put "012-123-4589" into mobile phoneNumber..............................passed
+And put "123-485-7889" into phonenumber customer form.......................passed
+And put "900180" into zibcode customer form.................................passed
+And put "izmir buca" into address customer form.............................passed
+And put "Sakarya" cityForm into create customer form........................passed
+And put "789-45-9003"into ssnForm customer form.............................passed
+And select date into customer form..........................................passed
+And select country from customer form.......................................passed
+And put "USA" into state customer form......................................passed
+And select user from customer form..........................................passed
+And select  account from customer form......................................passed
+Then click to save button into customer form................................passed
+]]></system-out>
+</testcase>
+</testsuite>
