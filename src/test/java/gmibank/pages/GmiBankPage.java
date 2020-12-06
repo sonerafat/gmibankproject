@@ -1,5 +1,6 @@
 package gmibank.pages;
 
+import com.google.gson.internal.bind.util.ISO8601Utils;
 import gmibank.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -36,6 +37,8 @@ public class GmiBankPage {
 
     @FindBy(id = "email")
     public WebElement emailBox;
+
+
 
 }
 
