@@ -37,6 +37,7 @@ public class GmiBankPage {
     @FindBy(id = "email")
     public WebElement emailBox;
 
+    //git changes
 }
 
 
