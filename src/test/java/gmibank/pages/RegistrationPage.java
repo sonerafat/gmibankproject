@@ -37,6 +37,8 @@ public class RegistrationPage {
     @FindBy(id = "email")
     public WebElement emailBox;
 
+    // First Commit
+
 }
 
 
