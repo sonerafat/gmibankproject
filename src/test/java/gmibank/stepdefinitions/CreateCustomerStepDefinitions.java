@@ -76,13 +76,15 @@ customerPage.link_manage_customer.click();
 
     @And("put {string}into ssnForm customer form")
     public void putIntoSsnFormCustomerForm(String arg0) {
-        customerPage.ssnForm.sendKeys(arg0);
+       // customerPage.ssnForm.sendKeys(arg0);
+        String ssn=Driver.getRandomInteger(1000,100)+"-"+Driver.getRandomInteger(100,10)+"-"+Driver.getRandomInteger(10000,1000);
+        customerPage.ssnForm.sendKeys(ssn);
 
     }
 
     @And("select date into customer form")
     public void selectDateIntoCustomerForm() throws ParseException {
-        customerPage.createDateForm.sendKeys(DateUtil.todaysDate4());
+        customerPage.createDateForm.sendKeys(DateUtil.todaysDate6());
 
     }
 
@@ -101,7 +103,9 @@ customerPage.link_manage_customer.click();
     public void selectUserFromCustomerForm() {
         // Driver.selectRandomTextFromDropdown();
 
-        Driver.selectDropdown(customerPage.userForm,5);
+        Driver.selectDropdown(customerPage.userForm,9);
+
+
     }
 
     @And("select  account from customer form")
@@ -113,12 +117,7 @@ customerPage.link_manage_customer.click();
     public void clickToSaveButtonIntoCustomerForm() {
 
         customerPage.saveForm.click();
-        //test
-        //..
-        //son hali
-        //..
-//hagi bey
-        //
+
     }
 
 

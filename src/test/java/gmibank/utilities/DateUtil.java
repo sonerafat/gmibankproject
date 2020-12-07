@@ -2,6 +2,8 @@ package gmibank.utilities;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.Locale;
 
@@ -37,4 +39,11 @@ public class DateUtil {
 
         return dateString;
     }
+    public static String todaysDate6() {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss a");
+        LocalDateTime now = LocalDateTime.now();
+        return dtf.format(now);
+    }
+
+
 }
