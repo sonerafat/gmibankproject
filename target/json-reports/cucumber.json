@@ -1,0 +1,231 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 19536000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user got to GMI Bank homepage",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_got_to_GMI_Bank_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-08T10:26:53.725Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "TC_001-007 User type several informations",
+        "description": "",
+        "id": "go-to-homepage;tc-001-007-user-type-several-informations",
+        "after": [
+          {
+            "result": {
+              "duration": 519000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 173000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clik to register box",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_clik_to_register_box()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 439000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clik to register button",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_clik_to_register_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 429000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clik to SSn number box and send \"454-42-1223\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"454-42-1223\"",
+                  "offset": 37
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_clik_to_SSn_number_box_and_send(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click to first name box and send \"Hans\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hans\"",
+                  "offset": 38
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_first_name_box_and_send(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 257000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user click to last name box and send \"Kern\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kern\"",
+                  "offset": 37
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_last_name_box_and_send(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 530000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click to address box and send \"Ernst Straße 2, 17299 Hamburg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ernst Straße 2, 17299 Hamburg\"",
+                  "offset": 35
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_address_box_and_send(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 351000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click to mobile phone number box and send \"404-421-2236\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"404-421-2236\"",
+                  "offset": 47
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_mobile_phone_number_box_and_send(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 360000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click to username box and send \"hanskern1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hanskern1234\"",
+                  "offset": 36
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_username_box_and_send(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 387000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click to email box and send \"hanskern@fakemail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hanskern@fakemail.com\"",
+                  "offset": 33
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_email_box_and_send(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      }
+    ],
+    "name": "Go to homepage",
+    "description": "",
+    "id": "go-to-homepage",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/registration.feature",
+    "tags": [
+      {
+        "name": "@registrationpage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

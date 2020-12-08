@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.274">
+<testcase classname="Go to homepage" name="TC_001-007 User type several informations" time="23.37">
+<system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
+And user clik to register box...............................................passed
+And user clik to register button............................................passed
+And user clik to SSn number box and send "454-42-1223"......................passed
+And user click to first name box and send "Hans"............................passed
+And user click to last name box and send "Kern".............................passed
+And user click to address box and send "Ernst Straße 2, 17299 Hamburg"......passed
+And user click to mobile phone number box and send "404-421-2236"...........passed
+And user click to username box and send "hanskern1234"......................passed
+Then user click to email box and send "hanskern@fakemail.com"...............passed
+]]></system-out>
+</testcase>
+</testsuite>
