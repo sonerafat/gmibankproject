@@ -57,6 +57,6 @@ RegistrationPage gmiBankPage = new RegistrationPage();
     public void user_click_to_email_box_and_send(String email) {
         Driver.waitAndSendText(gmiBankPage.emailBox,email, 5);
     }
-
+    //Deneme Soner beyle
 
 }
