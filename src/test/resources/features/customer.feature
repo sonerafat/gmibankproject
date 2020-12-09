@@ -1,4 +1,5 @@
 @CreateCustomer
+################################ login
 Feature: Go to login
   Background: Go to login
     Given user click to login icon
@@ -15,6 +16,8 @@ Feature: Go to login
     And user enter valid ssn
     And user click to searchButton on create new customer
     Then Check FirstName should see textBox
+
+################################ Create new customer
 
 #  Scenario: Create new customer
 #
@@ -34,3 +37,14 @@ Feature: Go to login
 #    And select user from customer form
 #    And select  account from customer form
 #    Then click to save button into customer form
+
+  ############################### negative scenario
+
+  Scenario: Data validation on create customer-address
+    Then click to save button into customer form
+    And User should see an error message under address textbox
+
+  Scenario: Data validation on create customer-city
+    Then click to save button into customer form
+    And User should see an error message under city textbox
+

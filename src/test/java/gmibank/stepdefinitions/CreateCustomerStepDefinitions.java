@@ -150,6 +150,20 @@ customerPage.link_manage_customer.click();
 //////////////////////////Negative ADRESS-CITY-STATE- //////////////////////////////////////////////
 
 
+    @And("User should see an error message under address textbox")
+    public void userShouldSeeAnErrorMessageUnderAddressTextbox() {
+
+        String textActual= customerPage.errAdress.getText();
+        Assert.assertEquals("This field is required.", textActual);
+
+    }
+
+    @And("User should see an error message under city textbox")
+    public void userShouldSeeAnErrorMessageUnderCityTextbox() {
+        String textActual=customerPage.errCity.getText();
+        Assert.assertEquals("This field is required.",textActual);
+
+    }
 
 
 

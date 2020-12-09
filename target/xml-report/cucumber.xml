@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.92">
-<testcase classname="Go to login" name="Verify SSN" time="15.28">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="57.316">
+<testcase classname="Go to login" name="Verify SSN" time="31.434">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;entity-menu&quot;]/a/span&quot;}&#10;  (Session info: chrome=87.0.4280.88)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-GJUD146', ip: '192.168.100.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_275'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 8e9e746f9c31bb959965a09c4d220dc2&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;entity-menu&quot;]/a/span}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given user click to login icon..............................................passed
+And user click link sign in.................................................passed
+And user enter username as  "team21user"....................................passed
+And user enter password as  "team21User"....................................passed
+And user click to sign in button............................................passed
+And user click to my operations link........................................failed
+And user clcik to manage customer...........................................skipped
+And user click to button create new customer................................skipped
+And user enter valid ssn....................................................skipped
+And user click to searchButton on create new customer.......................skipped
+Then Check FirstName should see textBox.....................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="entity-menu"]/a/span"}
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-GJUD146', ip: '192.168.100.34', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_275'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56411}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8e9e746f9c31bb959965a09c4d220dc2
+*** Element info: {Using=xpath, value=//*[@id="entity-menu"]/a/span}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClickToMyOperationsLink(CreateCustomerStepDefinitions.java:42)
+	at ✽.user click to my operations link(file:///C:/Users/ASUS/IdeaProjects/gmibankproject/src/test/resources/features/customer.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="Go to login" name="Data validation on create customer-address" time="12.683">
 <system-out><![CDATA[Given user click to login icon..............................................passed
 And user click link sign in.................................................passed
 And user enter username as  "team21user"....................................passed
@@ -9,9 +53,21 @@ And user click to sign in button............................................pass
 And user click to my operations link........................................passed
 And user clcik to manage customer...........................................passed
 And user click to button create new customer................................passed
-And user enter valid ssn....................................................passed
-And user click to searchButton on create new customer.......................passed
-Then Check FirstName should see textBox.....................................passed
+Then click to save button into customer form................................passed
+And User should see an error message under address textbox..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Go to login" name="Data validation on create customer-city" time="12.6">
+<system-out><![CDATA[Given user click to login icon..............................................passed
+And user click link sign in.................................................passed
+And user enter username as  "team21user"....................................passed
+And user enter password as  "team21User"....................................passed
+And user click to sign in button............................................passed
+And user click to my operations link........................................passed
+And user clcik to manage customer...........................................passed
+And user click to button create new customer................................passed
+Then click to save button into customer form................................passed
+And User should see an error message under city textbox.....................passed
 ]]></system-out>
 </testcase>
 </testsuite>

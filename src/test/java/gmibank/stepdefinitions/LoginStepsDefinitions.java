@@ -18,21 +18,26 @@ LoginPage loginPage = new LoginPage();
 
     @And("user click link sign in")
     public void userClickLinkSignIn() {
-        loginPage.link_signIn.click();
-    }
+        Driver.waitAndClick(loginPage.link_signIn,1);
+            }
 
     @And("user enter username as  {string}")
     public void userEnterUsernameAs(String val_username) {
-        loginPage.txt_username.sendKeys(val_username);
+        Driver.waitAndSendText(loginPage.txt_username,val_username,1);
+
     }
 
     @And("user enter password as  {string}")
     public void userEnterPasswordAs(String val_password) {
-        loginPage.txt_password.sendKeys(val_password);
+
+        Driver.waitAndSendText(loginPage.txt_password,val_password,1);
+
     }
 
     @And("user click to sign in button")
     public void userClickToSignInButton() {
-        loginPage.btn_login_signIn.click();
+
+        Driver.waitAndClick(loginPage.btn_login_signIn,1);
+
     }
 }
