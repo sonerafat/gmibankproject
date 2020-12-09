@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="71.387">
-<testcase classname="Go to login" name="Data validation on create customer-address" time="18.974">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.542">
+<testcase classname="Go to login" name="Create new customer" time="17.904">
 <system-out><![CDATA[Given user click to login icon..............................................passed
 And user click link sign in.................................................passed
 And user enter username as  "team21employee"................................passed
@@ -9,47 +9,22 @@ And user click to sign in button............................................pass
 And user click to my operations link........................................passed
 And user clcik to manage customer...........................................passed
 And user click to button create new customer................................passed
-When click to save button into customer form................................passed
-And User should see an error message under address textbox..................passed
-]]></system-out>
-</testcase>
-<testcase classname="Go to login" name="Data validation on create customer-city" time="15.949">
-<system-out><![CDATA[Given user click to login icon..............................................passed
-And user click link sign in.................................................passed
-And user enter username as  "team21employee"................................passed
-And user enter password as  "team21Employee"................................passed
-And user click to sign in button............................................passed
-And user click to my operations link........................................passed
-And user clcik to manage customer...........................................passed
-And user click to button create new customer................................passed
-When click to save button into customer form................................passed
-And User should see an error message under city textbox.....................passed
-]]></system-out>
-</testcase>
-<testcase classname="Go to login" name="Data validation on create customer-country" time="17.631">
-<system-out><![CDATA[Given user click to login icon..............................................passed
-And user click link sign in.................................................passed
-And user enter username as  "team21employee"................................passed
-And user enter password as  "team21Employee"................................passed
-And user click to sign in button............................................passed
-And user click to my operations link........................................passed
-And user clcik to manage customer...........................................passed
-And user click to button create new customer................................passed
-When click to save button into customer form................................passed
-And User should see an error message under country dropdown.................passed
-]]></system-out>
-</testcase>
-<testcase classname="Go to login" name="Data validation on create customer-state" time="17.68">
-<system-out><![CDATA[Given user click to login icon..............................................passed
-And user click link sign in.................................................passed
-And user enter username as  "team21employee"................................passed
-And user enter password as  "team21Employee"................................passed
-And user click to sign in button............................................passed
-And user click to my operations link........................................passed
-And user clcik to manage customer...........................................passed
-And user click to button create new customer................................passed
-When click to save button into customer form................................passed
-Then User should see an error message under state textbox...................passed
+And put  "Robert" into create firstname form................................passed
+And put "Sabin" into create lastname form...................................passed
+And put "R.S." into middle initial customer form............................passed
+And put "infor@gmail.com" into mail customer form...........................passed
+And put "412-123-4589" into mobile phoneNumber..............................passed
+And put "123-485-7889" into phonenumber customer form.......................passed
+And put "900180" into zibcode customer form.................................passed
+And put "izmir buca" into address customer form.............................passed
+And put "Sakarya" cityForm into create customer form........................passed
+And put "789-45-9523"into ssnForm customer form.............................passed
+And select date into customer form..........................................passed
+And select country from customer form.......................................passed
+And put "USA" into state customer form......................................passed
+And select user from customer form..........................................passed
+And select  account from customer form......................................passed
+Then click to save button into customer form................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

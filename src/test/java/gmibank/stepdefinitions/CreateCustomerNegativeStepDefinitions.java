@@ -1,14 +1,12 @@
 package gmibank.stepdefinitions;
 
-import gmibank.pages.CreateCustomerPages;
-import gmibank.pages.CreateCustomerPages_negative;
+import gmibank.pages.ManageCustomerPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 
-public class CreateCustomer_negativeStepDefinitions {
-    CreateCustomerPages_negative errCustomerPage =new CreateCustomerPages_negative();
+public class CreateCustomerNegativeStepDefinitions {
+    ManageCustomerPage errCustomerPage =new ManageCustomerPage();
 
     @And("User should see an error message under address textbox")
     public void userShouldSeeAnErrorMessageUnderAddressTextbox() {

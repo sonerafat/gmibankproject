@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 14582000000,
+              "duration": 12610000000,
               "status": "passed"
             },
             "line": 4,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 259000000,
+              "duration": 156000000,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 289000000,
+              "duration": 143000000,
               "status": "passed"
             },
             "line": 6,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 454000000,
+              "duration": 166000000,
               "status": "passed"
             },
             "line": 7,
@@ -71,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 163000000,
+              "duration": 140000000,
               "status": "passed"
             },
             "line": 8,
@@ -80,59 +80,11 @@
               "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userClickToSignInButton()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 893000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click to my operations link",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClickToMyOperationsLink()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 236000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user clcik to manage customer",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClcikToManageCustomer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 570000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user click to button create new customer",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClickToButtonCreateNewCustomer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 430000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "click to save button into customer form",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.clickToSaveButtonIntoCustomerForm()"
-            },
-            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-07T23:23:09.467Z",
+        "start_timestamp": "2020-12-09T08:21:30.708Z",
         "before": [
           {
             "result": {
@@ -144,14 +96,14 @@
             }
           }
         ],
-        "line": 14,
-        "name": "Data validation on create customer-address",
+        "line": 9,
+        "name": "Create new customer",
         "description": "",
-        "id": "go-to-login;data-validation-on-create-customer-address",
+        "id": "go-to-login;create-new-customer",
         "after": [
           {
             "result": {
-              "duration": 474000000,
+              "duration": 391000000,
               "status": "passed"
             },
             "match": {
@@ -164,554 +116,302 @@
         "steps": [
           {
             "result": {
-              "duration": 328000000,
+              "duration": 553000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click to my operations link",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClickToMyOperationsLink()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clcik to manage customer",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClcikToManageCustomer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 228000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click to button create new customer",
+            "match": {
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClickToButtonCreateNewCustomer()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "put  \"Robert\" into create firstname form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Robert\"",
+                  "offset": 5
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoCreateFirstnameForm(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "put \"Sabin\" into create lastname form",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sabin\"",
+                  "offset": 4
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoCreateLastnameForm(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 103000000,
               "status": "passed"
             },
             "line": 15,
-            "name": "User should see an error message under address textbox",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomer_negativeStepDefinitions.userShouldSeeAnErrorMessageUnderAddressTextbox()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@DataValidateCustomer"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "Go to login",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 12057000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user click to login icon",
-            "match": {
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userClickToLoginIcon()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 266000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user click link sign in",
-            "match": {
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userClickLinkSignIn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 184000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enter username as  \"team21employee\"",
+            "name": "put \"R.S.\" into middle initial customer form",
             "match": {
               "arguments": [
                 {
-                  "val": "\"team21employee\"",
-                  "offset": 24
+                  "val": "\"R.S.\"",
+                  "offset": 4
                 }
               ],
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userEnterUsernameAs(java.lang.String)"
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoMiddleInitialCustomerForm(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 481000000,
+              "duration": 274000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user enter password as  \"team21Employee\"",
+            "line": 16,
+            "name": "put \"infor@gmail.com\" into mail customer form",
             "match": {
               "arguments": [
                 {
-                  "val": "\"team21Employee\"",
-                  "offset": 24
+                  "val": "\"infor@gmail.com\"",
+                  "offset": 4
                 }
               ],
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userEnterPasswordAs(java.lang.String)"
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoMailCustomerForm(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 209000000,
+              "duration": 141000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user click to sign in button",
+            "line": 17,
+            "name": "put \"412-123-4589\" into mobile phoneNumber",
             "match": {
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userClickToSignInButton()"
+              "arguments": [
+                {
+                  "val": "\"412-123-4589\"",
+                  "offset": 4
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoMobilePhoneNumber(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 743000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click to my operations link",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClickToMyOperationsLink()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 224000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user clcik to manage customer",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClcikToManageCustomer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 360000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user click to button create new customer",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClickToButtonCreateNewCustomer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 431000000,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "click to save button into customer form",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.clickToSaveButtonIntoCustomerForm()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-07T23:23:28.466Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 17,
-        "name": "Data validation on create customer-city",
-        "description": "",
-        "id": "go-to-login;data-validation-on-create-customer-city",
-        "after": [
-          {
-            "result": {
-              "duration": 582000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 405000000,
+              "duration": 147000000,
               "status": "passed"
             },
             "line": 18,
-            "name": "User should see an error message under city textbox",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomer_negativeStepDefinitions.userShouldSeeAnErrorMessageUnderCityTextbox()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@DataValidateCustomer"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "Go to login",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 12480000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user click to login icon",
-            "match": {
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userClickToLoginIcon()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 283000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user click link sign in",
-            "match": {
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userClickLinkSignIn()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 260000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enter username as  \"team21employee\"",
+            "name": "put \"123-485-7889\" into phonenumber customer form",
             "match": {
               "arguments": [
                 {
-                  "val": "\"team21employee\"",
-                  "offset": 24
+                  "val": "\"123-485-7889\"",
+                  "offset": 4
                 }
               ],
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userEnterUsernameAs(java.lang.String)"
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoPhonenumberCustomerForm(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 476000000,
+              "duration": 127000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user enter password as  \"team21Employee\"",
+            "line": 19,
+            "name": "put \"900180\" into zibcode customer form",
             "match": {
               "arguments": [
                 {
-                  "val": "\"team21Employee\"",
-                  "offset": 24
+                  "val": "\"900180\"",
+                  "offset": 4
                 }
               ],
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userEnterPasswordAs(java.lang.String)"
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoZibcodeCustomerForm(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 214000000,
+              "duration": 137000000,
               "status": "passed"
             },
-            "line": 8,
-            "name": "user click to sign in button",
+            "line": 20,
+            "name": "put \"izmir buca\" into address customer form",
             "match": {
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userClickToSignInButton()"
+              "arguments": [
+                {
+                  "val": "\"izmir buca\"",
+                  "offset": 4
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoAddressCustomerForm(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 933000000,
+              "duration": 122000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "user click to my operations link",
+            "line": 21,
+            "name": "put \"Sakarya\" cityForm into create customer form",
             "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClickToMyOperationsLink()"
+              "arguments": [
+                {
+                  "val": "\"Sakarya\"",
+                  "offset": 4
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putCityFormIntoCreateCustomerForm(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 229000000,
+              "duration": 146000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user clcik to manage customer",
+            "line": 22,
+            "name": "put \"789-45-9523\"into ssnForm customer form",
             "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClcikToManageCustomer()"
+              "arguments": [
+                {
+                  "val": "\"789-45-9523\"",
+                  "offset": 4
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoSsnFormCustomerForm(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 629000000,
+              "duration": 225000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user click to button create new customer",
+            "line": 23,
+            "name": "select date into customer form",
             "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClickToButtonCreateNewCustomer()"
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.selectDateIntoCustomerForm()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1327000000,
+              "duration": 347000000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "click to save button into customer form",
+            "line": 24,
+            "name": "select country from customer form",
             "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.clickToSaveButtonIntoCustomerForm()"
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.selectCountryFromCustomerForm()"
             },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-07T23:23:44.430Z",
-        "before": [
+            "keyword": "And "
+          },
           {
             "result": {
+              "duration": 129000000,
               "status": "passed"
             },
+            "line": 25,
+            "name": "put \"USA\" into state customer form",
             "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 20,
-        "name": "Data validation on create customer-country",
-        "description": "",
-        "id": "go-to-login;data-validation-on-create-customer-country",
-        "after": [
+              "arguments": [
+                {
+                  "val": "\"USA\"",
+                  "offset": 4
+                }
+              ],
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoStateCustomerForm(java.lang.String)"
+            },
+            "keyword": "And "
+          },
           {
             "result": {
               "duration": 505000000,
               "status": "passed"
             },
+            "line": 26,
+            "name": "select user from customer form",
             "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 291000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "User should see an error message under country dropdown",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomer_negativeStepDefinitions.userShouldSeeAnErrorMessageUnderCountryDropdown()"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@DataValidateCustomer"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "Go to login",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 12404000000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user click to login icon",
-            "match": {
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userClickToLoginIcon()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 306000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user click link sign in",
-            "match": {
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userClickLinkSignIn()"
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.selectUserFromCustomerForm()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 290000000,
+              "duration": 368000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user enter username as  \"team21employee\"",
+            "line": 27,
+            "name": "select  account from customer form",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"team21employee\"",
-                  "offset": 24
-                }
-              ],
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userEnterUsernameAs(java.lang.String)"
+              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.selectAccountFromCustomerForm()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 562000000,
+              "duration": 166000000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user enter password as  \"team21Employee\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"team21Employee\"",
-                  "offset": 24
-                }
-              ],
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userEnterPasswordAs(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 161000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click to sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.LoginStepsDefinitions.userClickToSignInButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 905000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user click to my operations link",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClickToMyOperationsLink()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 252000000,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user clcik to manage customer",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClcikToManageCustomer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1094000000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user click to button create new customer",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClickToButtonCreateNewCustomer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 796000000,
-              "status": "passed"
-            },
-            "line": 12,
+            "line": 28,
             "name": "click to save button into customer form",
             "match": {
               "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.clickToSaveButtonIntoCustomerForm()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-12-07T23:24:02.072Z",
-        "before": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 23,
-        "name": "Data validation on create customer-state",
-        "description": "",
-        "id": "go-to-login;data-validation-on-create-customer-state",
-        "after": [
-          {
-            "result": {
-              "duration": 584000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 317000000,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User should see an error message under state textbox",
-            "match": {
-              "location": "gmibank.stepdefinitions.CreateCustomer_negativeStepDefinitions.userShouldSeeAnErrorMessageUnderStateTextbox()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@DataValidateCustomer"
+            "name": "@CreateCustomer"
           }
         ]
       }
@@ -720,10 +420,10 @@
     "description": "",
     "id": "go-to-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/customer_negative.feature",
+    "uri": "file:src/test/resources/features/customer.feature",
     "tags": [
       {
-        "name": "@DataValidateCustomer",
+        "name": "@CreateCustomer",
         "type": "Tag",
         "location": {
           "line": 1,

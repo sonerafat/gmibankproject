@@ -1,17 +1,18 @@
 package gmibank.stepdefinitions;
 
-import gmibank.pages.LoginPages;
+import gmibank.pages.LoginPage;
 import gmibank.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.WebDriver;
+import gmibank.utilities.ConfigReader;
 
 public class LoginStepsDefinitions {
 WebDriver driver;
-LoginPages loginPage = new LoginPages();
+LoginPage loginPage = new LoginPage();
     @Given("user click to login icon")
     public void userClickToLoginIcon() {
-        Driver.getDriver().get("https://www.gmibank.com/");
+        Driver.getDriver().get(ConfigReader.getProperty("gmiBank_url"));
         loginPage.login_icon.click();
     }
 
@@ -32,7 +33,6 @@ LoginPages loginPage = new LoginPages();
 
     @And("user click to sign in button")
     public void userClickToSignInButton() {
-
-            loginPage.btn_login_signIn.click();
+        loginPage.btn_login_signIn.click();
     }
 }

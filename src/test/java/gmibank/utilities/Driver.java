@@ -252,12 +252,27 @@ public class Driver {
         dropdown.selectByIndex(countryIndex);
 //select dropdownlist
     }
+
+        public static void selectDropdown (WebElement element, String str){
+            Select dropdown = new Select(element);
+            dropdown.selectByVisibleText(str);
+        }
 //generate number for ssn  321-56-6789
     public static int getRandomInteger(int maximum, int minimum){
         return ((int) (Math.random()*(maximum - minimum))) + minimum;
 
            }
 
+    public static void waitAndClick(WebElement element, int timeout) {
+        for (int i = 0; i < timeout; i++) {
+            try {
+                element.click();
+                return;
+            } catch (WebDriverException e) {
+                wait(1);
+            }
+        }
+    }
 
 
 

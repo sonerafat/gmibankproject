@@ -1,16 +1,16 @@
 package gmibank.stepdefinitions;
 
-import gmibank.pages.CreateCustomerPages;
+import gmibank.pages.ManageCustomerPage;
 import gmibank.utilities.DateUtil;
 import gmibank.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import org.openqa.selenium.support.ui.Select;
 
 import java.text.ParseException;
 
 public class CreateCustomerStepDefinitions {
-    CreateCustomerPages customerPage =new CreateCustomerPages();
+    ManageCustomerPage customerPage =new ManageCustomerPage();
+
     @And("user click to my operations link")
     public void userClickToMyOperationsLink() {
         customerPage.link_myOperation.click();
@@ -103,7 +103,8 @@ customerPage.link_manage_customer.click();
     public void selectUserFromCustomerForm() {
         // Driver.selectRandomTextFromDropdown();
 
-        Driver.selectDropdown(customerPage.userForm,9);
+        Driver.selectDropdown(customerPage.userForm,20);
+        Driver.selectCheckBox(customerPage.zelleChecBbox,true);
 
 
     }

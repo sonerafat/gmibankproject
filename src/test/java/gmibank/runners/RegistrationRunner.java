@@ -13,7 +13,8 @@ import org.junit.runner.RunWith;
         //plugin = "html:target\\default-cucumber-reports",
         features ="src/test/resources/features",
         glue = "gmibank/stepdefinitions",
-        tags = "@DataValidateCustomer",
+        //tags = "@DataValidateCustomer",
+        tags = "@CreateCustomer",
         dryRun = false,
         strict = true
 )

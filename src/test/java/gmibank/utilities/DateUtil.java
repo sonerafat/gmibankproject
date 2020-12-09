@@ -40,7 +40,7 @@ public class DateUtil {
         return dateString;
     }
     public static String todaysDate6() {
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss a");
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy HH:mm:ss a");
         LocalDateTime now = LocalDateTime.now();
         return dtf.format(now);
     }

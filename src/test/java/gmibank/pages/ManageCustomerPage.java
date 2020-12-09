@@ -5,8 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CreateCustomerPages {
-    public CreateCustomerPages(){
+public class ManageCustomerPage {
+    public ManageCustomerPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
@@ -66,8 +66,25 @@ public class CreateCustomerPages {
     @FindBy(xpath = "//*[@id=\"tp-customer-account\"]")
     public WebElement  accountForm;
 
+    @FindBy(xpath = "//*[@id=\"tp-customer-zelleEnrolled\"]")
+    public WebElement  zelleChecBbox;
+
     @FindBy(xpath = "//*[@id=\"save-entity\"]")
     public WebElement  saveForm;
+
+    //negative scenario
+
+    @FindBy(xpath = "(//div[text()='This field is required.'])[8]")
+    public WebElement errAdress;
+
+    @FindBy(xpath = "(//div[text()='This field is required.'])[9]")
+    public WebElement errCity;
+
+    @FindBy(xpath = "(//div[text()='This field is required.'])[8]")
+    public WebElement errcountry;
+
+    @FindBy(xpath = "(//div[text()='This field is required.'])[8]")
+    public WebElement  errState;
 
 
 }
