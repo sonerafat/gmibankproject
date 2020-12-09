@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="18.542">
-<testcase classname="Go to login" name="Create new customer" time="17.904">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.92">
+<testcase classname="Go to login" name="Verify SSN" time="15.28">
 <system-out><![CDATA[Given user click to login icon..............................................passed
 And user click link sign in.................................................passed
-And user enter username as  "team21employee"................................passed
-And user enter password as  "team21Employee"................................passed
+And user enter username as  "team21user"....................................passed
+And user enter password as  "team21User"....................................passed
 And user click to sign in button............................................passed
 And user click to my operations link........................................passed
 And user clcik to manage customer...........................................passed
 And user click to button create new customer................................passed
-And put  "Robert" into create firstname form................................passed
-And put "Sabin" into create lastname form...................................passed
-And put "R.S." into middle initial customer form............................passed
-And put "infor@gmail.com" into mail customer form...........................passed
-And put "412-123-4589" into mobile phoneNumber..............................passed
-And put "123-485-7889" into phonenumber customer form.......................passed
-And put "900180" into zibcode customer form.................................passed
-And put "izmir buca" into address customer form.............................passed
-And put "Sakarya" cityForm into create customer form........................passed
-And put "789-45-9523"into ssnForm customer form.............................passed
-And select date into customer form..........................................passed
-And select country from customer form.......................................passed
-And put "USA" into state customer form......................................passed
-And select user from customer form..........................................passed
-And select  account from customer form......................................passed
-Then click to save button into customer form................................passed
+And user enter valid ssn....................................................passed
+And user click to searchButton on create new customer.......................passed
+Then Check FirstName should see textBox.....................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

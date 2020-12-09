@@ -5,11 +5,37 @@ import gmibank.utilities.DateUtil;
 import gmibank.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 
 import java.text.ParseException;
 
 public class CreateCustomerStepDefinitions {
     ManageCustomerPage customerPage =new ManageCustomerPage();
+
+    //////////////////////////search ssn /////////////////////////////////////////////////////
+    @And("user enter valid ssn")
+    public void userEnterValidSsn() {
+        Driver.waitAndSendText(customerPage.ssnTextbox,"123-12-1234",1);
+    }
+
+    @And("user click to searchButton on create new customer")
+    public void userClickToSearchButtonOnCreateNewCustomer() {
+        Driver.waitAndClick(customerPage.searchButton,5);
+
+    }
+
+    @Then("Check FirstName should see textBox")
+    public void checkFirstNameShouldSeeTextBox() throws InterruptedException {
+        //Driver.waitAndClick(customerPage.serachButton,5);
+
+       Driver.waitAndClick(customerPage.ssnForm,2);
+
+        String val2 = customerPage.firstNameForm.getAttribute("value");
+        System.out.println("val:"+val2);
+        Assert.assertEquals(val2,"Pehlivan");
+    }
+
+    //////////////////////////cretate customer ///////////////////////////////////////////////////////
 
     @And("user click to my operations link")
     public void userClickToMyOperationsLink() {
@@ -84,7 +110,7 @@ customerPage.link_manage_customer.click();
 
     @And("select date into customer form")
     public void selectDateIntoCustomerForm() throws ParseException {
-        customerPage.createDateForm.sendKeys(DateUtil.todaysDate6());
+        customerPage.createDateForm.sendKeys(DateUtil.todaysDate2());
 
     }
 
@@ -103,7 +129,7 @@ customerPage.link_manage_customer.click();
     public void selectUserFromCustomerForm() {
         // Driver.selectRandomTextFromDropdown();
 
-        Driver.selectDropdown(customerPage.userForm,20);
+        Driver.selectDropdown(customerPage.userForm,0);
         Driver.selectCheckBox(customerPage.zelleChecBbox,true);
 
 
@@ -120,6 +146,10 @@ customerPage.link_manage_customer.click();
         customerPage.saveForm.click();
 
     }
+
+//////////////////////////Negative ADRESS-CITY-STATE- //////////////////////////////////////////////
+
+
 
 
 

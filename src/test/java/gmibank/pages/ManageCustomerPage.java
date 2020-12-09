@@ -51,6 +51,8 @@ public class ManageCustomerPage {
     @FindBy(xpath = "//*[@id=\"tp-customer-ssn\"]")
     public WebElement  ssnForm;
 
+    //  //*[@id="tp-customer-ssn"]
+
     @FindBy(xpath = "//*[@id=\"tp-customer-createDate\"]")
     public WebElement  createDateForm;
 
@@ -85,6 +87,14 @@ public class ManageCustomerPage {
 
     @FindBy(xpath = "(//div[text()='This field is required.'])[8]")
     public WebElement  errState;
+
+    //ssn search
+
+    @FindBy(xpath = "//*[text()=\"Search\"]")
+    public  WebElement searchButton;
+
+    @FindBy(xpath = "//input[@id=\"search-ssn\"]")
+    public WebElement ssnTextbox;
 
 
 }

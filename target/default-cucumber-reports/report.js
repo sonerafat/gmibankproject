@@ -38,7 +38,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enter username as  \"team21employee\"",
+  "name": "user enter username as  \"team21user\"",
   "keyword": "And "
 });
 formatter.match({
@@ -48,7 +48,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enter password as  \"team21Employee\"",
+  "name": "user enter password as  \"team21User\"",
   "keyword": "And "
 });
 formatter.match({
@@ -66,16 +66,6 @@ formatter.match({
 });
 formatter.result({
   "status": "passed"
-});
-formatter.scenario({
-  "name": "Create new customer",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@CreateCustomer"
-    }
-  ]
 });
 formatter.step({
   "name": "user click to my operations link",
@@ -107,162 +97,42 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Verify SSN",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@CreateCustomer"
+    }
+  ]
+});
 formatter.step({
-  "name": "put  \"Robert\" into create firstname form",
+  "name": "user enter valid ssn",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoCreateFirstnameForm(java.lang.String)"
+  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userEnterValidSsn()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "put \"Sabin\" into create lastname form",
+  "name": "user click to searchButton on create new customer",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoCreateLastnameForm(java.lang.String)"
+  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userClickToSearchButtonOnCreateNewCustomer()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "put \"R.S.\" into middle initial customer form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoMiddleInitialCustomerForm(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "put \"infor@gmail.com\" into mail customer form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoMailCustomerForm(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "put \"412-123-4589\" into mobile phoneNumber",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoMobilePhoneNumber(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "put \"123-485-7889\" into phonenumber customer form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoPhonenumberCustomerForm(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "put \"900180\" into zibcode customer form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoZibcodeCustomerForm(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "put \"izmir buca\" into address customer form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoAddressCustomerForm(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "put \"Sakarya\" cityForm into create customer form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putCityFormIntoCreateCustomerForm(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "put \"789-45-9523\"into ssnForm customer form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoSsnFormCustomerForm(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "select date into customer form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.selectDateIntoCustomerForm()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "select country from customer form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.selectCountryFromCustomerForm()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "put \"USA\" into state customer form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoStateCustomerForm(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "select user from customer form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.selectUserFromCustomerForm()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "select  account from customer form",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.selectAccountFromCustomerForm()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click to save button into customer form",
+  "name": "Check FirstName should see textBox",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.clickToSaveButtonIntoCustomerForm()"
+  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.checkFirstNameShouldSeeTextBox()"
 });
 formatter.result({
   "status": "passed"
