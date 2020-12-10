@@ -8,13 +8,13 @@
         When user clicks user icon
         When user clicks register button
         And user clicks register
-        Then user verifies SSN message "translation-not-found[Your SSN is required]"
-        Then user verifies firstname message "Your First Name is required"
-        Then user verifies lastname message "Your Last Name is required"
-        Then user verifies username message "Your username is required."
-        Then user verifies email message "Your email is required."
-        Then user verifies new password message "Your password is required."
-        Then user verifies confirmation password message "Your confirmation password is required."
+        Then user verifies SSN message
+        Then user verifies firstname message
+        Then user verifies lastname message
+        Then user verifies username message
+        Then user verifies email message
+        Then user verifies new password message
+        Then user verifies confirmation password message
         Then And user verifies the visibility of message
 
 
@@ -31,53 +31,43 @@
         And user enters new password "<password>"
         And user enters new password confirmation "<password>"
         And user clicks register
-        Then User verifies the SSN invalid message "Your SSN is invalid"
+        Then User verifies the SSN invalid message
 
         Examples:  Data for TC_02
 
           | ssnNumber | firstname | lastname  | address      | mobilePhone    | username  | email        | password |
           |1585-7854  | Thomas    | Ziegler   |Mainstreet 55 | 123-456-7890   | thozie    | jokl@gmx.de  | 123456   |
 
-      Scenario Outline: TC_03 Mobilephone number cannot be of any chars nor spec chars except "-"
+      Scenario: TC_03 Mobilephone number cannot be of any chars nor spec chars except "-"
         When  When user clicks user icon
         When user clicks register button
-        And User enters SSN number "<ssnNumber>"
-        And user enters firstname "<firstname>"
-        And user enters lastname "<lastname>"
-        And user enters address "<address>"
-        And user enters mobile phone "<mobilePhone>"
-        And user enters username "<username>"
-        And user enters email "<email>"
-        And user enters new password "<password>"
-        And user enters new password confirmation "<password>"
+        And User enters SSN number
+        And user enters firstname
+        And user enters lastname
+        And user enters address
+        And user enters mobile phone
+        And user enters username
+        And user enters email
+        And user enters new password
+        And user enters new password confirmation
         And user clicks register
-        Then user verifies the message "Your mobile phone number is invalid"
+        Then user verifies the message
 
-        Examples: Data for TC_03
 
-          | ssnNumber | firstname    | lastname | address      | mobilePhone | username | email       | password |
-          |157-85-7854| Sebastian    | Kaiser   |Mainstreet 52 | 13*45-78    | sebka    | pola@gmx.de | 123456   |
-
-        Scenario Outline: TC_04 Email id cannot be created without "@" sign and ".com" extension
+        Scenario: TC_04 Email id cannot be created without "@" sign and ".com" extension
           When  When user clicks user icon
           When user clicks register button
-          And User enters SSN number "<ssnNumber>"
-          And user enters firstname "<firstname>"
-          And user enters lastname "<lastname>"
-          And user enters address "<address>"
-          And user enters mobile phone "<mobilePhone>"
-          And user enters username "<username>"
-          And user enters email "<email>"
-          And user enters new password "<password>"
-          And user enters new password confirmation "<password>"
+          And User enters SSN Number
+          And user enters Firstname
+          And user enters Lastname
+          And user enters Address
+          And user enters Mobile phone
+          And user enters Username
+          And user enters Email
+          And user enters New password
+          And user enters New password confirmation
           And user clicks register
-          Then user verifies the mail message "This field is invalid"
-
-          Examples:  Data for TC_04
-
-            | ssnNumber | firstname | lastname | address      | mobilePhone    | username | email       | password |
-            |157-85-7854| Oliver    | Muller   |Mainstreet 52 | 123-456-7890   | olmul    | asdxgmx.de  | 123456   |
-
+          Then user verifies the mail message
 
 
 
