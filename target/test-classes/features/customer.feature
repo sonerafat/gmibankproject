@@ -40,11 +40,11 @@ Feature: Go to login
 
   ############################### negative scenario
 
-  Scenario: Data validation on create customer-address
+  Scenario: Data validation-address on create customer
     Then click to save button into customer form
-    And User should see an error message under address textbox
+    And User should see an error message under address textbox "This field is required."
 
-  Scenario: Data validation on create customer-city
+  Scenario: Data validation-city on create customer
     Then click to save button into customer form
-    And User should see an error message under city textbox
+    And User should see an error message under city textbox "This field is required."
 

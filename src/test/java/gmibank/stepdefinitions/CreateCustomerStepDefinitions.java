@@ -20,7 +20,7 @@ public class CreateCustomerStepDefinitions {
 
     @And("user click to searchButton on create new customer")
     public void userClickToSearchButtonOnCreateNewCustomer() {
-        Driver.waitAndClick(customerPage.searchButton,5);
+        Driver.waitAndClick(customerPage.searchButton,2);
 
     }
 
@@ -28,7 +28,8 @@ public class CreateCustomerStepDefinitions {
     public void checkFirstNameShouldSeeTextBox() throws InterruptedException {
         //Driver.waitAndClick(customerPage.serachButton,5);
 
-       Driver.waitAndClick(customerPage.ssnForm,2);
+
+       customerPage.ssnForm.click();
 
         String val2 = customerPage.firstNameForm.getAttribute("value");
         System.out.println("val:"+val2);
@@ -39,28 +40,30 @@ public class CreateCustomerStepDefinitions {
 
     @And("user click to my operations link")
     public void userClickToMyOperationsLink() {
-        customerPage.link_myOperation.click();
+        Driver.waitAndClick(customerPage.link_myOperation,1);
 
     }
 
     @And("user clcik to manage customer")
     public void userClcikToManageCustomer() {
-customerPage.link_manage_customer.click();
+    Driver.waitAndClick(customerPage.link_manage_customer,1);
     }
 
     @And("user click to button create new customer")
     public void userClickToButtonCreateNewCustomer() {
-    customerPage.btn_create_new_customer.click();
+
+    Driver.waitAndClick(customerPage.btn_create_new_customer,1);
     }
 
     @And("put  {string} into create firstname form")
     public void putIntoCreateFirstnameForm(String arg0) {
-        customerPage.firstNameForm.sendKeys(arg0);
+        Driver.waitAndSendText(customerPage.firstNameForm,arg0,1);
     }
 
     @And("put {string} into create lastname form")
     public void putIntoCreateLastnameForm(String arg0) {
-        customerPage.lastNameForm.sendKeys(arg0);
+
+        Driver.waitAndSendText(customerPage.lastNameForm,arg0,1);
 
     }
 
@@ -86,18 +89,18 @@ customerPage.link_manage_customer.click();
 
     @And("put {string} into zibcode customer form")
     public void putIntoZibcodeCustomerForm(String arg0) {
-        customerPage.zipCodeForm.sendKeys(arg0);
+        Driver.waitAndSendText(customerPage.zipCodeForm,arg0,1);
     }
 
     @And("put {string} into address customer form")
     public void putIntoAddressCustomerForm(String arg0) {
-        customerPage.addressForm.sendKeys(arg0);
+        Driver.waitAndSendText(customerPage.addressForm,arg0,1);
 
     }
 
     @And("put {string} cityForm into create customer form")
     public void putCityFormIntoCreateCustomerForm(String arg0) {
-        customerPage.cityForm.sendKeys(arg0);
+        Driver.waitAndSendText(customerPage.cityForm,arg0,1);
     }
 
     @And("put {string}into ssnForm customer form")
@@ -110,19 +113,18 @@ customerPage.link_manage_customer.click();
 
     @And("select date into customer form")
     public void selectDateIntoCustomerForm() throws ParseException {
-        customerPage.createDateForm.sendKeys(DateUtil.todaysDate2());
+        Driver.waitAndSendText(customerPage.createDateForm,DateUtil.todaysDate2(),1);
 
     }
 
     @And("select country from customer form")
     public void selectCountryFromCustomerForm() {
-       // Driver.selectRandomTextFromDropdown();
-        Driver.selectDropdown(customerPage.countryForm,5);
+        Driver.selectDropdown(customerPage.countryForm,1);
     }
 
     @And("put {string} into state customer form")
     public void putIntoStateCustomerForm(String arg0) {
-        customerPage.stateForm.sendKeys(arg0);
+        Driver.waitAndSendText(customerPage.stateForm,arg0,1);
     }
 
     @And("select user from customer form")
@@ -142,29 +144,20 @@ customerPage.link_manage_customer.click();
 
     @Then("click to save button into customer form")
     public void clickToSaveButtonIntoCustomerForm() {
-
-        customerPage.saveForm.click();
-
+        Driver.waitAndClick(customerPage.saveForm,1);
     }
 
 //////////////////////////Negative ADRESS-CITY-STATE- //////////////////////////////////////////////
 
-
-    @And("User should see an error message under address textbox")
-    public void userShouldSeeAnErrorMessageUnderAddressTextbox() {
-
-        String textActual= customerPage.errAdress.getText();
-        Assert.assertEquals("This field is required.", textActual);
-
+    @And("User should see an error message under address textbox {string}")
+    public void userShouldSeeAnErrorMessageUnderAddressTextbox(String errActual) {
+        String textExpected= customerPage.errAdress.getText();
+        Assert.assertEquals("This field is required.", errActual);
     }
 
-    @And("User should see an error message under city textbox")
-    public void userShouldSeeAnErrorMessageUnderCityTextbox() {
-        String textActual=customerPage.errCity.getText();
-        Assert.assertEquals("This field is required.",textActual);
-
+    @And("User should see an error message under city textbox {string}")
+    public void userShouldSeeAnErrorMessageUnderCityTextbox(String errActual) {
+        String textExpected=customerPage.errCity.getText();
+        Assert.assertEquals(textExpected,errActual);
     }
-
-
-
 }

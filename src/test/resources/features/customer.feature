@@ -1,6 +1,6 @@
 @CreateCustomer
-################################ login
-Feature: Go to login
+################################ login  #####################
+Feature: Go to Customer
   Background: Go to login
     Given user click to login icon
     And user click link sign in
@@ -17,10 +17,10 @@ Feature: Go to login
     And user click to searchButton on create new customer
     Then Check FirstName should see textBox
 
-################################ Create new customer
+################################ Create new customer  ########################
 
 #  Scenario: Create new customer
-#
+
 #    And put  "Robert" into create firstname form
 #    And put "Sabin" into create lastname form
 #    And put "R.S." into middle initial customer form
@@ -38,13 +38,15 @@ Feature: Go to login
 #    And select  account from customer form
 #    Then click to save button into customer form
 
-  ############################### negative scenario
+  ###############################  negative scenario  #########################
 
-  Scenario: Data validation on create customer-address
+  Scenario: Data validation-address on create customer
     Then click to save button into customer form
-    And User should see an error message under address textbox
+    And User should see an error message under address textbox "This field is required."
 
-  Scenario: Data validation on create customer-city
+  Scenario: Data validation-city on create customer
     Then click to save button into customer form
-    And User should see an error message under city textbox
+    And User should see an error message under city textbox "This field is required."
+
+    ###############################  account date  #########################
 
