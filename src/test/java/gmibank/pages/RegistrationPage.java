@@ -7,8 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class RegistrationPage {
 
-    public RegistrationPage() {
-        PageFactory.initElements(Driver.getDriver(), this);}
+    public RegistrationPage() { PageFactory.initElements(Driver.getDriver(), this);}
 
     @FindBy(xpath = "//a[@class='d-flex align-items-center dropdown-toggle nav-link']")
     public WebElement signinButton;

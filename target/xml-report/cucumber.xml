@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="60.887">
+<testcase classname="User Info Page Test" name="Testing Update email functionality" time="15.466">
+<system-out><![CDATA[Given user is on the home page..............................................passed
+And Click on the icon and click on sign in..................................passed
+And Enter username and password.............................................passed
+And Click on sign in button.................................................passed
+And Click on user name and click on User info...............................passed
+And Type "44321" in email textbox...........................................passed
+And Click on save button....................................................passed
+Then Verify the error message is "This field is invalid"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info Page Test" name="Testing Update email functionality 2" time="12.598">
+<system-out><![CDATA[Given user is on the home page..............................................passed
+And Click on the icon and click on sign in..................................passed
+And Enter username and password.............................................passed
+And Click on sign in button.................................................passed
+And Click on user name and click on User info...............................passed
+And Type "usergmail.com" in email textbox...................................passed
+And Click on save button....................................................passed
+Then Verify the error message is "This field is invalid"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info Page Test" name="Testing Update email functionality 3" time="13.554">
+<system-out><![CDATA[Given user is on the home page..............................................passed
+And Click on the icon and click on sign in..................................passed
+And Enter username and password.............................................passed
+And Click on sign in button.................................................passed
+And Click on user name and click on User info...............................passed
+And Type "user@gmailcom" in email textbox...................................passed
+And Click on save button....................................................passed
+Then Verify the error message is "This field is invalid"....................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info Page Test" name="Testing language options" time="18.146">
+<failure message="expected:&lt;T[ürkçe]&gt; but was:&lt;T[urkish]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given user is on the home page..............................................passed
+And Click on the icon and click on sign in..................................passed
+And Enter username and password.............................................passed
+And Click on sign in button.................................................passed
+And Click on user name and click on User info...............................passed
+Then Verify that "English" and "Turkish" are only options in the drop box...failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<T[ürkçe]> but was:<T[urkish]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at gmibank.stepdefinitions.US_007_UserInfoNegative.verify_that_and_are_only_options_in_the_drop_box(US_007_UserInfoNegative.java:25)
+	at ✽.Verify that "English" and "Turkish" are only options in the drop box(file:///C:/Users/user/IdeaProjects/gmibankproject/src/test/resources/features/US_007_UserInfo_Negative.feature:22)
+]]></failure>
+</testcase>
+</testsuite>
