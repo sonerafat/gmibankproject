@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="59.203">
+    <testcase classname="Go to homepage" name="TC001 Employee Creates Description" time="41.689">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;This field is required.&quot;}&#10;  (Session info: chrome=86.0.4240.198)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-KNL8SGH', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 7056656276b4b7bcc5581b91d9d37e05&#10;*** Element info: {Using=link text, value=This field is required.}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given employee goes to GMI Bank homepage....................................passed
+And user click to login icon................................................passed
+And user click to Sign in...................................................passed
+And user click to Username box and send "team21employee"....................passed
+And user click to Password box and send "team21Employee"....................passed
+And user click to Sign in button............................................passed
+And user click to My Operations button......................................passed
+And user click to Manage Accounts button....................................passed
+And user click to Create New Account button.................................passed
+And user click to Description box and send " "..............................passed
+Then verify the message is "This field is required."........................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"This field is required."}
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-KNL8SGH', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7056656276b4b7bcc5581b91d9d37e05
+*** Element info: {Using=link text, value=This field is required.}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at gmibank.stepdefinitions.EmpAccCreationStepDefinitions.verify_the_message_is(EmpAccCreationStepDefinitions.java:68)
+	at ✽.verify the message is "This field is required."(file:///C:/Users/User/IdeaProjects/GmiBankFramework/src/test/resources/features/empAccCreation.feature:16)
+]]></failure>
+    </testcase>
+    <testcase classname="Go to homepage" name="" time="17.029">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login\-item&quot;}&#10;  (Session info: chrome=86.0.4240.198)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-KNL8SGH', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 7056656276b4b7bcc5581b91d9d37e05&#10;*** Element info: {Using=id, value=login-item}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given employee goes to GMI Bank homepage....................................passed
+And user click to login icon................................................passed
+And user click to Sign in...................................................failed
+And user click to Username box and send "team21employee"....................skipped
+And user click to Password box and send "team21Employee"....................skipped
+And user click to Sign in button............................................skipped
+And user click to My Operations button......................................skipped
+And user click to Manage Accounts button....................................skipped
+And user click to Create New Account button.................................skipped
+And user click to Description box and send "My Account".....................skipped
+Then verify the message is not displayed....................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-item"}
+  (Session info: chrome=86.0.4240.198)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-KNL8SGH', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7056656276b4b7bcc5581b91d9d37e05
+*** Element info: {Using=id, value=login-item}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at gmibank.stepdefinitions.EmpAccCreationStepDefinitions.user_clik_to_Sign_in(EmpAccCreationStepDefinitions.java:27)
+	at ✽.user click to Sign in(file:///C:/Users/User/IdeaProjects/GmiBankFramework/src/test/resources/features/empAccCreation.feature:6)
+]]></failure>
+    </testcase>
+</testsuite>

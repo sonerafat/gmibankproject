@@ -30,9 +30,6 @@ RegistrationPage gmiBankPage = new RegistrationPage();
     public void user_clik_to_SSn_number_box_and_send(String ssn) {
     Driver.waitAndSendText(gmiBankPage.ssnBox,ssn, 5);
     }
-
-
-
     @Given("user click to first name box and send {string}")
     public void user_click_to_first_name_box_and_send(String firstName) {
     Driver.waitAndSendText(gmiBankPage.firstNameBox,firstName, 5);
