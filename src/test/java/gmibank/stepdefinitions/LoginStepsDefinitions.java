@@ -30,14 +30,15 @@ LoginPage loginPage = new LoginPage();
     @And("user enter password as  {string}")
     public void userEnterPasswordAs(String val_password) {
 
-        Driver.waitAndSendText(loginPage.txt_password,val_password,1);
+        Driver.waitAndSendText(loginPage.txt_password,val_password,2);
 
     }
 
     @And("user click to sign in button")
     public void userClickToSignInButton() {
 
-        Driver.waitAndClick(loginPage.btn_login_signIn,1);
+        Driver.waitAndClick(loginPage.btn_login_signIn,2);
+       // loginPage.btn_login_signIn.click();
 
     }
 }

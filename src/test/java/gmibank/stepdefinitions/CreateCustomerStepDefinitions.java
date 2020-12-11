@@ -1,8 +1,10 @@
 package gmibank.stepdefinitions;
 
+import com.google.gson.internal.bind.util.ISO8601Utils;
 import gmibank.pages.ManageCustomerPage;
 import gmibank.utilities.DateUtil;
 import gmibank.utilities.Driver;
+import gmibank.utilities.ExcelUtil;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -11,6 +13,12 @@ import java.text.ParseException;
 
 public class CreateCustomerStepDefinitions {
     ManageCustomerPage customerPage =new ManageCustomerPage();
+
+    String path = ".\\src\\test\\CustomerData.xlsx";
+    ExcelUtil ssnSheet = new ExcelUtil(path, "ssnSheet");
+    ExcelUtil testDatasheet = new ExcelUtil(path, "TestData");
+
+
 
     //////////////////////////search ssn /////////////////////////////////////////////////////
     @And("user enter valid ssn")
@@ -69,7 +77,8 @@ public class CreateCustomerStepDefinitions {
 
     @And("put {string} into middle initial customer form")
     public void putIntoMiddleInitialCustomerForm(String arg0) {
-        customerPage.middileInitial.sendKeys("M");
+
+        customerPage.middileInitial.sendKeys(arg0);
     }
 
     @And("put {string} into mail customer form")
@@ -105,9 +114,10 @@ public class CreateCustomerStepDefinitions {
 
     @And("put {string}into ssnForm customer form")
     public void putIntoSsnFormCustomerForm(String arg0) {
-       // customerPage.ssnForm.sendKeys(arg0);
+
         String ssn=Driver.getRandomInteger(1000,100)+"-"+Driver.getRandomInteger(100,10)+"-"+Driver.getRandomInteger(10000,1000);
         customerPage.ssnForm.sendKeys(ssn);
+
 
     }
 
@@ -145,6 +155,12 @@ public class CreateCustomerStepDefinitions {
     @Then("click to save button into customer form")
     public void clickToSaveButtonIntoCustomerForm() {
         Driver.waitAndClick(customerPage.saveForm,1);
+
+        String ssnToXls = customerPage.ssnForm.getAttribute("value");
+        String firstnameToXls = customerPage.firstNameForm.getAttribute("value");
+
+
+
     }
 
 //////////////////////////Negative ADRESS-CITY-STATE- //////////////////////////////////////////////
