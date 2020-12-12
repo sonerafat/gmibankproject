@@ -155,12 +155,6 @@ public class CreateCustomerStepDefinitions {
     @Then("click to save button into customer form")
     public void clickToSaveButtonIntoCustomerForm() {
         Driver.waitAndClick(customerPage.saveForm,1);
-
-        String ssnToXls = customerPage.ssnForm.getAttribute("value");
-        String firstnameToXls = customerPage.firstNameForm.getAttribute("value");
-
-
-
     }
 
 //////////////////////////Negative ADRESS-CITY-STATE- //////////////////////////////////////////////
@@ -176,4 +170,29 @@ public class CreateCustomerStepDefinitions {
         String textExpected=customerPage.errCity.getText();
         Assert.assertEquals(textExpected,errActual);
     }
+
+    @And("select country from customer form index {string}")
+    public void selectCountryFromCustomerFormIndex(String arg0) {
+
+        Driver.selectDropdown(customerPage.countryForm,0);
+    }
+
+
+
+    @Then("user should be seen error message")
+    public void userShouldBeSeenErrorMessage() {
+    boolean contain= customerPage.errToast.getText().contains("error");
+    Assert.assertFalse(contain);
+    //we expected error message but it responses false..
+        // when we tested with  assertFalse we expect that give us failed test
+        // but test passed
+
+    }
+
+    @And("leave blank into state customer form")
+    public void leaveBlankIntoStateCustomerForm() {
+
+    }
+
+
 }

@@ -96,5 +96,8 @@ public class ManageCustomerPage {
     @FindBy(xpath = "//input[@id=\"search-ssn\"]")
     public WebElement ssnTextbox;
 
+    @FindBy(xpath = "//*[@id=\"root\"]/div/div/div[1]/div/div/div[1]")
+    public WebElement  errToast;
+
 
 }

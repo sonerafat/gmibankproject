@@ -98,7 +98,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Create new customer",
+  "name": "Data validation-country on create customer",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -218,21 +218,21 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "select country from customer form",
+  "name": "select country from customer form index \"0\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.selectCountryFromCustomerForm()"
+  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.selectCountryFromCustomerFormIndex(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "put \"USA\" into state customer form",
+  "name": "leave blank into state customer form",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.putIntoStateCustomerForm(java.lang.String)"
+  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.leaveBlankIntoStateCustomerForm()"
 });
 formatter.result({
   "status": "passed"
@@ -263,6 +263,16 @@ formatter.step({
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.clickToSaveButtonIntoCustomerForm()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should be seen error message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.CreateCustomerStepDefinitions.userShouldBeSeenErrorMessage()"
 });
 formatter.result({
   "status": "passed"

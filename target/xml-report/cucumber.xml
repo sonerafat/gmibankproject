@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.636">
-<testcase classname="Go to Customer" name="Create new customer" time="22.62">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.925">
+<testcase classname="Go to Customer" name="Data validation-country on create customer" time="28.03">
 <system-out><![CDATA[Given user click to login icon..............................................passed
 And user click link sign in.................................................passed
 And user enter username as  "team21user"....................................passed
@@ -20,11 +20,12 @@ And put "izmir buca" into address customer form.............................pass
 And put "Sakarya" cityForm into create customer form........................passed
 And put "789-45-9523"into ssnForm customer form.............................passed
 And select date into customer form..........................................passed
-And select country from customer form.......................................passed
-And put "USA" into state customer form......................................passed
+And select country from customer form index "0".............................passed
+And leave blank into state customer form....................................passed
 And select user from customer form..........................................passed
 And select  account from customer form......................................passed
 Then click to save button into customer form................................passed
+Then user should be seen error message......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
