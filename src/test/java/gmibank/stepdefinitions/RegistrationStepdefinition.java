@@ -20,7 +20,7 @@ public class RegistrationStepdefinition {
         Driver.getDriver().get(ConfigReader.getProperty("gmiBank_url"));
     }
     @Given("user clik to register box")
-    public void user_clik_to_register_box() { gmiBankPage.signinButton.click(); }
+    public void user_clik_to_register_box() { gmiBankPage.userIcon.click(); }
     @Then("user clik to register button")
     public void user_clik_to_register_button() {
         gmiBankPage.registerButton.click();
@@ -28,16 +28,19 @@ public class RegistrationStepdefinition {
     @Then("user clik to SSn number box and send {string}")
     public void user_clik_to_SSn_number_box_and_send(String ssn) {
         Driver.waitAndSendText(gmiBankPage.ssnBox,ssn, 5);
-       // gmiBankPage.registerTitle.click();
-       // Driver.verifyElementNotDisplayed(By.xpath("//*[text()='Your SSN is invalid']"));
+      // gmiBankPage.registerTitle.click();
+      // Driver.verifyElementNotDisplayed(By.xpath("//*[text()='Your SSN is invalid']"));
     }
     @Given("user click to first name box and send {string}")
     public void user_click_to_first_name_box_and_send(String firstName) {
-        Driver.waitAndSendText(gmiBankPage.firstNameBox,firstName, 5);
+        Driver.waitAndSendText(gmiBankPage.firstnameBox,firstName, 5);
+     //   gmiBankPage.registerTitle.click();
+     //   Driver.verifyElementNotDisplayed(By.xpath("//*[text()='Your First Name is required']"));
+
     }
     @Given("user click to last name box and send {string}")
     public void user_click_to_last_name_box_and_send(String lastName) {
-        Driver.waitAndSendText(gmiBankPage.lastNameBox,lastName, 5);
+        Driver.waitAndSendText(gmiBankPage.lastnameBox,lastName, 5);
     }
     @Given("user click to address box and send {string}")
     public void user_click_to_address_box_and_send(String address) {
@@ -56,8 +59,5 @@ public class RegistrationStepdefinition {
         Driver.waitAndSendText(gmiBankPage.emailBox,email, 5);
 
     }
-
-    //This is only a comment
-    //This is
 
 }

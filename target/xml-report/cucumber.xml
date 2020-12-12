@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="24.274">
-<testcase classname="Go to homepage" name="TC_001-007 User type several informations" time="23.37">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.234">
+<testcase classname="Go to homepage" name="TC_001-007 User type several informations" time="19.954">
 <system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
 And user clik to register box...............................................passed
 And user clik to register button............................................passed
