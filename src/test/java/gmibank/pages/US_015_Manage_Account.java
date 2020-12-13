@@ -5,7 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class US_015_Manage_Account {
+
     public US_015_Manage_Account() {
         PageFactory.initElements(Driver.getDriver(), this);}
 
@@ -31,17 +34,20 @@ public class US_015_Manage_Account {
     @FindBy(xpath = "//li[@id='entity-menu']")
     public WebElement My_Operation;
 
-    @FindBy(xpath = "//span[contains(text(),'Manage Accounts')]")
-    public WebElement Manege_Account;
+    @FindBy(xpath = "//a[contains(text(),'My Accounts')]")
+    public WebElement My_Account;
 
-    @FindBy(xpath = "//thead/tr[1]/th[4]")
-    public WebElement Account_Types;
+    @FindBy(xpath = "//td[2]")
+    public List<WebElement> Account_Types;
 
-    @FindBy(xpath = "//thead/tr[1]/th[3]")
+    @FindBy(xpath = "//td[3]")
     public WebElement Balance;
 
-    @FindBy(xpath = "//tbody/tr[1]/td[9]/div[1]/a[1]")
-    public WebElement View;
+    @FindBy(xpath = "//tbody/tr/td[4]")
+    public List<WebElement> Transaction;
+
+    @FindBy(xpath = "//table/tbody/tr")
+    public List<WebElement> ViewTransaction;
 
 
 
