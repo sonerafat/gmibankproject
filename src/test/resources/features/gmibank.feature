@@ -1,4 +1,4 @@
-@gmihomepage
+
 Feature: Go to homepage
     Background: User go to GMI Bank homepage
         Given user got to GMI Bank homepage
@@ -15,6 +15,8 @@ Feature: Go to homepage
         Scenario: TC_0003 User type own last name
             Given user click to last name box
             Then user send a valid last name
+
+
 
 
 
