@@ -19,6 +19,7 @@ public class RegistrationStepdefinition {
     public void user_got_to_GMI_Bank_homepage() {
         Driver.getDriver().get(ConfigReader.getProperty("gmiBank_url"));
     }
+
     @Given("user clik to register box")
     public void user_clik_to_register_box() { gmiBankPage.userIcon.click(); }
     @Then("user clik to register button")
@@ -58,6 +59,10 @@ public class RegistrationStepdefinition {
     public void user_click_to_email_box_and_send(String email) {
         Driver.waitAndSendText(gmiBankPage.emailBox,email, 5);
 
+
     }
+
+    }
+    
 
 }
