@@ -15,8 +15,12 @@ Feature: User Info Page Test
     |email          |
     |44321          |
     |usergmail.com  |
+    |user@.com      |
     |user@gmailcom  |
+    |.com@          |
+    |212.com@       |
 
     @langtest
     Scenario: Testing language options
       Then Verify that "English" and "Turkish" are only options in the drop box
+

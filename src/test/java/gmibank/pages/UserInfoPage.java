@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class UserInfoPage {
     public UserInfoPage(){
         PageFactory.initElements(Driver.getDriver(), this);
@@ -49,4 +51,13 @@ public class UserInfoPage {
     public WebElement accountMenu;
     @FindBy(xpath = "(//a[@class='dropdown-item'])[3]")
     public WebElement userInfo;
+    @FindBy(xpath = "(//a[@class='dropdown-item'])[4]")
+    public WebElement password_text;
+    @FindBy(id = "strengthBar")
+    public WebElement str;
+    @FindBy(xpath = "//li[@style='background-color: rgb(221, 221, 221);']")
+    public List<WebElement> gri;
+    @FindBy(id = "newPassword")
+    public WebElement newPassword;
+
 }

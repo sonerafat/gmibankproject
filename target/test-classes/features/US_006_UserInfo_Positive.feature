@@ -13,15 +13,24 @@
     Scenario: testing Language drop down menu
       Then Verify that "English" and "Turkish" are in the dropbox
      @firstname
-    Scenario: Testing Update first name functionality
-      And Type "team21new" in first name textbox
+    Scenario Outline: Testing Update first name functionality
+      And Type "<firstname>" in first name textbox
       And Click on save button
       Then Verify the success message is "Settings saved!"
+       Examples:
+       |firstname |
+       |team21    |
+       |team21new |
     @last
-    Scenario: Testing Update last name functionality
-      And Type "NewUser" in last name textbox
+    Scenario Outline: Testing Update last name functionality
+      And Type "<lastname>" in last name textbox
       And Click on save button
       Then Verify the success message is "Settings saved!"
+      Examples:
+      |lastname   |
+      |newlastname|
+      |user       |
+
       @email
     Scenario: Testing Update email functionality
       And Type "team210@gmail.com" in email textbox
