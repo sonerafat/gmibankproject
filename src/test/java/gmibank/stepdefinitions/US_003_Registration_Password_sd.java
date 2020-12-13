@@ -1,5 +1,6 @@
 package gmibank.stepdefinitions;
 
+import gmibank.pages.RegistrationPage;
 import gmibank.pages.US_003_Registration_Password;
 import gmibank.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -10,6 +11,7 @@ public class US_003_Registration_Password_sd {
 
 
     US_003_Registration_Password us_003_registration_password = new US_003_Registration_Password();
+    RegistrationPage registrationPage = new RegistrationPage();
     public int level;
 
 
@@ -29,40 +31,40 @@ public class US_003_Registration_Password_sd {
     @Then("user click to New Password button")
     public void user_click_to_New_Password_button() {
 
-        us_003_registration_password.newPassword.click();
+        registrationPage.firstPassword.click();
     }
 
     @Then("user type New {string}")
     public void user_type_New(String string) {
 
-        Driver.waitAndSendText(us_003_registration_password.newPassword, string, 2);
+        Driver.waitAndSendText(registrationPage.firstPassword, string, 2);
 
     }
 
     @Then("check the bar level")
     public void check_the_bar_level() {
 
-        if (us_003_registration_password.level_1.getAttribute("style").contains("221")) {
+        if (registrationPage.level_1.getAttribute("style").contains("221")) {
             System.out.println("level =" + 0);
             level=0;
 
-        }else if (us_003_registration_password.level_2.getAttribute("style").contains("221")) {
+        }else if (registrationPage.level_2.getAttribute("style").contains("221")) {
 
             System.out.println("level ="+ 1);
             level=1;
 
         }
-        else if (us_003_registration_password.level_3.getAttribute("style").contains("221")){
+        else if (registrationPage.level_3.getAttribute("style").contains("221")){
             System.out.println("level ="+ 2);
             level=2;
 
 
-        }else if (us_003_registration_password.level_4.getAttribute("style").contains("221")) {
+        }else if (registrationPage.level_4.getAttribute("style").contains("221")) {
             System.out.println("level ="+ 3);
             level=3;
 
 
-        }else if (us_003_registration_password.level_5.getAttribute("style").contains("221")) {
+        }else if (registrationPage.level_5.getAttribute("style").contains("221")) {
             System.out.println("level ="+ 4);
             level=4;
 
