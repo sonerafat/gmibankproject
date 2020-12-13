@@ -12,28 +12,18 @@ import org.testng.asserts.SoftAssert;
 
 import java.util.List;
 
-public class US_006_UserInfoPositive {
-    UserInfoPage userInfoPage = new UserInfoPage();
+public class UserInfo {
+    gmibank.pages.UserInfoPage userInfoPage = new gmibank.pages.UserInfoPage();
 
     @Given("user is on the home page")
     public void user_is_on_the_home_page() {
         Driver.getDriver().get(ConfigReader.getProperty("gmiBank_url"));
     }
+    @Given("sign in as {string}")
+    public void sign_in_as(String string) {
+        Driver.login(string);
+    }
 
-    @Given("Click on the icon and click on sign in")
-    public void click_on_the_icon_and_click_on_sign_in() {
-        userInfoPage.accountItem.click();
-        userInfoPage.login.click();
-    }
-    @Given("Enter username and password")
-    public void enter_username_and_password() {
-        userInfoPage.username.sendKeys(ConfigReader.getProperty("username"));
-        userInfoPage.password.sendKeys(ConfigReader.getProperty("password"));
-    }
-    @Given("Click on sign in button")
-    public void click_on_sign_in_button() {
-        userInfoPage.signInButton.click();
-    }
     @Given("Click on user name and click on User info")
     public void click_on_user_name_and_click_on_User_info() {
         userInfoPage.accountMenu.click();
@@ -90,6 +80,45 @@ public class US_006_UserInfoPositive {
         userInfoPage.email.clear();
         userInfoPage.email.sendKeys(string);
     }
+    @Then("Verify the error message is {string}")
+    public void verify_the_error_message_is(String string) {
+        org.junit.Assert.assertTrue(userInfoPage.errorMessage.isDisplayed());
+    }
+
+    @Then("Verify that {string} and {string} are only options in the drop box")
+    public void verify_that_and_are_only_options_in_the_drop_box(String string, String string2) {
+        Select select = new Select(userInfoPage.language);
+        List<WebElement> dropOptions = select.getOptions();
+        org.junit.Assert.assertEquals(dropOptions.get(0).getText(), string);
+        org.junit.Assert.assertEquals(dropOptions.get(1).getText(), string2);
+        org.junit.Assert.assertEquals(dropOptions.size(), 2);
+    }
+    //    password
+    @Given("Click on user name and click on password")
+    public void click_on_user_name_and_click_on_password() {
+        userInfoPage.accountMenu.click();
+        userInfoPage.password_text.click();
+    }
+
+    @Then("verify")
+    public void verify() {
+
+
+//        int ilk = userInfoPage.gri.size();
+//        userInfoPage.newPassword.sendKeys("aliveli");
+//        int son = userInfoPage.gri.size();
+//        userInfoPage.newPassword.sendKeys();
+//        Assert.assertTrue(ilk>2);
+//        System.out.println(userInfoPage.gri.size());
+
+
+
+    }
+    @Given("Sign in to the page")
+    public void sign_in_to_the_page() {
+        Driver.login("manager");
+    }
+
 
 
 }

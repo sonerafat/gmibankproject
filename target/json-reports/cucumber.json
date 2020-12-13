@@ -11,71 +11,54 @@
         "steps": [
           {
             "result": {
-              "duration": 12219000000,
+              "duration": 18141000000,
               "status": "passed"
             },
             "line": 4,
             "name": "user is on the home page",
             "match": {
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.user_is_on_the_home_page()"
+              "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 400000000,
+              "duration": 1216000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Click on the icon and click on sign in",
+            "name": "sign in as \"user\"",
             "match": {
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_the_icon_and_click_on_sign_in()"
+              "arguments": [
+                {
+                  "val": "\"user\"",
+                  "offset": 11
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 400000000,
+              "duration": 830000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "Enter username and password",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.enter_username_and_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 160000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Click on sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 576000000,
-              "status": "passed"
-            },
-            "line": 8,
             "name": "Click on user name and click on User info",
             "match": {
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_user_name_and_click_on_User_info()"
+              "location": "gmibank.stepdefinitions.UserInfo.click_on_user_name_and_click_on_User_info()"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-12T19:50:11.847Z",
+        "start_timestamp": "2020-12-13T21:28:31.327Z",
         "before": [
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "match": {
@@ -83,14 +66,14 @@
             }
           }
         ],
-        "line": 22,
-        "name": "Testing Update first name functionality",
+        "line": 45,
+        "name": "Testing Update email functionality",
         "description": "",
-        "id": "user-info-page-test;testing-update-first-name-functionality;;2",
+        "id": "user-info-page-test;testing-update-email-functionality;negative-cases-for-email;2",
         "after": [
           {
             "result": {
-              "duration": 456000000,
+              "duration": 658000000,
               "status": "passed"
             },
             "match": {
@@ -103,49 +86,49 @@
         "steps": [
           {
             "result": {
-              "duration": 426000000,
+              "duration": 645000000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "Type \"team21\" in first name textbox",
+            "line": 40,
+            "name": "Type \"44321\" in email textbox",
             "match": {
               "arguments": [
                 {
-                  "val": "\"team21\"",
+                  "val": "\"44321\"",
                   "offset": 5
                 }
               ],
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.type_in_first_name_textbox(java.lang.String)"
+              "location": "gmibank.stepdefinitions.UserInfo.type_in_email_textbox(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 114000000,
+              "duration": 182000000,
               "status": "passed"
             },
-            "line": 18,
+            "line": 41,
             "name": "Click on save button",
             "match": {
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_save_button()"
+              "location": "gmibank.stepdefinitions.UserInfo.click_on_save_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5175000000,
+              "duration": 187000000,
               "status": "passed"
             },
-            "line": 19,
-            "name": "Verify the success message is \"Settings saved!\"",
+            "line": 42,
+            "name": "Verify the error message is \"This field is invalid\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Settings saved!\"",
-                  "offset": 30
+                  "val": "\"This field is invalid\"",
+                  "offset": 28
                 }
               ],
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.Verify_the_success_message_is(java.lang.String)"
+              "location": "gmibank.stepdefinitions.UserInfo.verify_the_error_message_is(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -155,7 +138,10 @@
             "name": "@userInfoPositiveTest"
           },
           {
-            "name": "@firstname"
+            "name": "@userInfoNegativeTest"
+          },
+          {
+            "name": "@NegativeEmail"
           }
         ]
       },
@@ -168,68 +154,50 @@
         "steps": [
           {
             "result": {
-              "duration": 9761000000,
+              "duration": 16692000000,
               "status": "passed"
             },
             "line": 4,
             "name": "user is on the home page",
             "match": {
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.user_is_on_the_home_page()"
+              "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 320000000,
+              "duration": 1017000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "Click on the icon and click on sign in",
+            "name": "sign in as \"user\"",
             "match": {
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_the_icon_and_click_on_sign_in()"
+              "arguments": [
+                {
+                  "val": "\"user\"",
+                  "offset": 11
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 336000000,
+              "duration": 869000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "Enter username and password",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.enter_username_and_password()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 168000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Click on sign in button",
-            "match": {
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 608000000,
-              "status": "passed"
-            },
-            "line": 8,
             "name": "Click on user name and click on User info",
             "match": {
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_user_name_and_click_on_User_info()"
+              "location": "gmibank.stepdefinitions.UserInfo.click_on_user_name_and_click_on_User_info()"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-12T19:50:31.949Z",
+        "start_timestamp": "2020-12-13T21:28:53.395Z",
         "before": [
           {
             "result": {
@@ -240,14 +208,14 @@
             }
           }
         ],
-        "line": 23,
-        "name": "Testing Update first name functionality",
+        "line": 46,
+        "name": "Testing Update email functionality",
         "description": "",
-        "id": "user-info-page-test;testing-update-first-name-functionality;;3",
+        "id": "user-info-page-test;testing-update-email-functionality;negative-cases-for-email;3",
         "after": [
           {
             "result": {
-              "duration": 592000000,
+              "duration": 365000000,
               "status": "passed"
             },
             "match": {
@@ -260,49 +228,49 @@
         "steps": [
           {
             "result": {
-              "duration": 496000000,
+              "duration": 654000000,
               "status": "passed"
             },
-            "line": 17,
-            "name": "Type \"team21new\" in first name textbox",
+            "line": 40,
+            "name": "Type \"usergmail.com\" in email textbox",
             "match": {
               "arguments": [
                 {
-                  "val": "\"team21new\"",
+                  "val": "\"usergmail.com\"",
                   "offset": 5
                 }
               ],
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.type_in_first_name_textbox(java.lang.String)"
+              "location": "gmibank.stepdefinitions.UserInfo.type_in_email_textbox(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 112000000,
+              "duration": 123000000,
               "status": "passed"
             },
-            "line": 18,
+            "line": 41,
             "name": "Click on save button",
             "match": {
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_save_button()"
+              "location": "gmibank.stepdefinitions.UserInfo.click_on_save_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 5178000000,
+              "duration": 93000000,
               "status": "passed"
             },
-            "line": 19,
-            "name": "Verify the success message is \"Settings saved!\"",
+            "line": 42,
+            "name": "Verify the error message is \"This field is invalid\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Settings saved!\"",
-                  "offset": 30
+                  "val": "\"This field is invalid\"",
+                  "offset": 28
                 }
               ],
-              "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.Verify_the_success_message_is(java.lang.String)"
+              "location": "gmibank.stepdefinitions.UserInfo.verify_the_error_message_is(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -312,7 +280,578 @@
             "name": "@userInfoPositiveTest"
           },
           {
-            "name": "@firstname"
+            "name": "@userInfoNegativeTest"
+          },
+          {
+            "name": "@NegativeEmail"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Entrance of the page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 18378000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the home page",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 891000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "sign in as \"user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user\"",
+                  "offset": 11
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 883000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on user name and click on User info",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfo.click_on_user_name_and_click_on_User_info()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-13T21:29:13.222Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 47,
+        "name": "Testing Update email functionality",
+        "description": "",
+        "id": "user-info-page-test;testing-update-email-functionality;negative-cases-for-email;4",
+        "after": [
+          {
+            "result": {
+              "duration": 410000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 513000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Type \"user@.com\" in email textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@.com\"",
+                  "offset": 5
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.type_in_email_textbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 152000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Click on save button",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfo.click_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Verify the error message is \"This field is invalid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This field is invalid\"",
+                  "offset": 28
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.verify_the_error_message_is(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userInfoPositiveTest"
+          },
+          {
+            "name": "@userInfoNegativeTest"
+          },
+          {
+            "name": "@NegativeEmail"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Entrance of the page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 21060000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the home page",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1336000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "sign in as \"user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user\"",
+                  "offset": 11
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 845000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on user name and click on User info",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfo.click_on_user_name_and_click_on_User_info()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-13T21:29:34.536Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 48,
+        "name": "Testing Update email functionality",
+        "description": "",
+        "id": "user-info-page-test;testing-update-email-functionality;negative-cases-for-email;5",
+        "after": [
+          {
+            "result": {
+              "duration": 407000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 776000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Type \"user@gmailcom\" in email textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user@gmailcom\"",
+                  "offset": 5
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.type_in_email_textbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Click on save button",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfo.click_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Verify the error message is \"This field is invalid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This field is invalid\"",
+                  "offset": 28
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.verify_the_error_message_is(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userInfoPositiveTest"
+          },
+          {
+            "name": "@userInfoNegativeTest"
+          },
+          {
+            "name": "@NegativeEmail"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Entrance of the page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 20664000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the home page",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 943000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "sign in as \"user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user\"",
+                  "offset": 11
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 976000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on user name and click on User info",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfo.click_on_user_name_and_click_on_User_info()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-13T21:29:59.212Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "Testing Update email functionality",
+        "description": "",
+        "id": "user-info-page-test;testing-update-email-functionality;negative-cases-for-email;6",
+        "after": [
+          {
+            "result": {
+              "duration": 847000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 863000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Type \".com@\" in email textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\".com@\"",
+                  "offset": 5
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.type_in_email_textbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 162000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Click on save button",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfo.click_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Verify the error message is \"This field is invalid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This field is invalid\"",
+                  "offset": 28
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.verify_the_error_message_is(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userInfoPositiveTest"
+          },
+          {
+            "name": "@userInfoNegativeTest"
+          },
+          {
+            "name": "@NegativeEmail"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Entrance of the page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 16864000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on the home page",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1287000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "sign in as \"user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user\"",
+                  "offset": 11
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 797000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Click on user name and click on User info",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfo.click_on_user_name_and_click_on_User_info()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-13T21:30:23.775Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 50,
+        "name": "Testing Update email functionality",
+        "description": "",
+        "id": "user-info-page-test;testing-update-email-functionality;negative-cases-for-email;7",
+        "after": [
+          {
+            "result": {
+              "duration": 436000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 608000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Type \"212.com@\" in email textbox",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"212.com@\"",
+                  "offset": 5
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.type_in_email_textbox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Click on save button",
+            "match": {
+              "location": "gmibank.stepdefinitions.UserInfo.click_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "Verify the error message is \"This field is invalid\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"This field is invalid\"",
+                  "offset": 28
+                }
+              ],
+              "location": "gmibank.stepdefinitions.UserInfo.verify_the_error_message_is(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@userInfoPositiveTest"
+          },
+          {
+            "name": "@userInfoNegativeTest"
+          },
+          {
+            "name": "@NegativeEmail"
           }
         ]
       }

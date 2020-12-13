@@ -10,17 +10,20 @@ formatter.feature({
   ]
 });
 formatter.scenarioOutline({
-  "name": "Testing Update first name functionality",
+  "name": "Testing Update email functionality",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@firstname"
+      "name": "@userInfoNegativeTest"
+    },
+    {
+      "name": "@NegativeEmail"
     }
   ]
 });
 formatter.step({
-  "name": "Type \"\u003cfirstname\u003e\" in first name textbox",
+  "name": "Type \"\u003cemail\u003e\" in email textbox",
   "keyword": "And "
 });
 formatter.step({
@@ -28,27 +31,47 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "Verify the success message is \"Settings saved!\"",
+  "name": "Verify the error message is \"This field is invalid\"",
   "keyword": "Then "
 });
 formatter.examples({
-  "name": "",
+  "name": "Negative cases for email",
   "description": "",
   "keyword": "Examples",
   "rows": [
     {
       "cells": [
-        "firstname"
+        "email"
       ]
     },
     {
       "cells": [
-        "team21"
+        "44321"
       ]
     },
     {
       "cells": [
-        "team21new"
+        "usergmail.com"
+      ]
+    },
+    {
+      "cells": [
+        "user@.com"
+      ]
+    },
+    {
+      "cells": [
+        "user@gmailcom"
+      ]
+    },
+    {
+      "cells": [
+        ".com@"
+      ]
+    },
+    {
+      "cells": [
+        "212.com@"
       ]
     }
   ]
@@ -66,37 +89,17 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.user_is_on_the_home_page()"
+  "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on the icon and click on sign in",
+  "name": "sign in as \"user\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_the_icon_and_click_on_sign_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Enter username and password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.enter_username_and_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_sign_in_button()"
+  "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -106,13 +109,13 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_user_name_and_click_on_User_info()"
+  "location": "gmibank.stepdefinitions.UserInfo.click_on_user_name_and_click_on_User_info()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Testing Update first name functionality",
+  "name": "Testing Update email functionality",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -120,16 +123,19 @@ formatter.scenario({
       "name": "@userInfoPositiveTest"
     },
     {
-      "name": "@firstname"
+      "name": "@userInfoNegativeTest"
+    },
+    {
+      "name": "@NegativeEmail"
     }
   ]
 });
 formatter.step({
-  "name": "Type \"team21\" in first name textbox",
+  "name": "Type \"44321\" in email textbox",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.type_in_first_name_textbox(java.lang.String)"
+  "location": "gmibank.stepdefinitions.UserInfo.type_in_email_textbox(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -139,17 +145,17 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_save_button()"
+  "location": "gmibank.stepdefinitions.UserInfo.click_on_save_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Verify the success message is \"Settings saved!\"",
+  "name": "Verify the error message is \"This field is invalid\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.Verify_the_success_message_is(java.lang.String)"
+  "location": "gmibank.stepdefinitions.UserInfo.verify_the_error_message_is(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -170,37 +176,17 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.user_is_on_the_home_page()"
+  "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Click on the icon and click on sign in",
+  "name": "sign in as \"user\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_the_icon_and_click_on_sign_in()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Enter username and password",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.enter_username_and_password()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Click on sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_sign_in_button()"
+  "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -210,13 +196,13 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_user_name_and_click_on_User_info()"
+  "location": "gmibank.stepdefinitions.UserInfo.click_on_user_name_and_click_on_User_info()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Testing Update first name functionality",
+  "name": "Testing Update email functionality",
   "description": "",
   "keyword": "Scenario Outline",
   "tags": [
@@ -224,16 +210,19 @@ formatter.scenario({
       "name": "@userInfoPositiveTest"
     },
     {
-      "name": "@firstname"
+      "name": "@userInfoNegativeTest"
+    },
+    {
+      "name": "@NegativeEmail"
     }
   ]
 });
 formatter.step({
-  "name": "Type \"team21new\" in first name textbox",
+  "name": "Type \"usergmail.com\" in email textbox",
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.type_in_first_name_textbox(java.lang.String)"
+  "location": "gmibank.stepdefinitions.UserInfo.type_in_email_textbox(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -243,17 +232,365 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.click_on_save_button()"
+  "location": "gmibank.stepdefinitions.UserInfo.click_on_save_button()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Verify the success message is \"Settings saved!\"",
+  "name": "Verify the error message is \"This field is invalid\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.US_006_UserInfoPositive.Verify_the_success_message_is(java.lang.String)"
+  "location": "gmibank.stepdefinitions.UserInfo.verify_the_error_message_is(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "Entrance of the page",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on the home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "sign in as \"user\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on user name and click on User info",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.click_on_user_name_and_click_on_User_info()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Testing Update email functionality",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@userInfoPositiveTest"
+    },
+    {
+      "name": "@userInfoNegativeTest"
+    },
+    {
+      "name": "@NegativeEmail"
+    }
+  ]
+});
+formatter.step({
+  "name": "Type \"user@.com\" in email textbox",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.type_in_email_textbox(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.click_on_save_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the error message is \"This field is invalid\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.verify_the_error_message_is(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "Entrance of the page",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on the home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "sign in as \"user\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on user name and click on User info",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.click_on_user_name_and_click_on_User_info()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Testing Update email functionality",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@userInfoPositiveTest"
+    },
+    {
+      "name": "@userInfoNegativeTest"
+    },
+    {
+      "name": "@NegativeEmail"
+    }
+  ]
+});
+formatter.step({
+  "name": "Type \"user@gmailcom\" in email textbox",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.type_in_email_textbox(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.click_on_save_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the error message is \"This field is invalid\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.verify_the_error_message_is(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "Entrance of the page",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on the home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "sign in as \"user\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on user name and click on User info",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.click_on_user_name_and_click_on_User_info()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Testing Update email functionality",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@userInfoPositiveTest"
+    },
+    {
+      "name": "@userInfoNegativeTest"
+    },
+    {
+      "name": "@NegativeEmail"
+    }
+  ]
+});
+formatter.step({
+  "name": "Type \".com@\" in email textbox",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.type_in_email_textbox(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.click_on_save_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the error message is \"This field is invalid\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.verify_the_error_message_is(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "Entrance of the page",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on the home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "sign in as \"user\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on user name and click on User info",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.click_on_user_name_and_click_on_User_info()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Testing Update email functionality",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@userInfoPositiveTest"
+    },
+    {
+      "name": "@userInfoNegativeTest"
+    },
+    {
+      "name": "@NegativeEmail"
+    }
+  ]
+});
+formatter.step({
+  "name": "Type \"212.com@\" in email textbox",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.type_in_email_textbox(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.click_on_save_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Verify the error message is \"This field is invalid\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.verify_the_error_message_is(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
