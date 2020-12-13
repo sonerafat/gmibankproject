@@ -78,6 +78,8 @@ public class RegisterPage {
     @FindBy(xpath = "/html/body/div/div/div/div[3]/div[1]/div/div/div[2]/div/form/div[7]/div")
     public WebElement emailInvalid;
 
+    //halloooooo
+
 
 
 
