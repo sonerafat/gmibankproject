@@ -1,57 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="134.106">
-<testcase classname="User Info Page Test" name="Testing Update email functionality" time="22.046">
-<system-out><![CDATA[Given user is on the home page..............................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.982">
+<testcase classname="Password Strength" name="Edit Password" time="24.327">
+<failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user is on the home page..............................................passed
 And sign in as "user".......................................................passed
-And Click on user name and click on User info...............................passed
-And Type "44321" in email textbox...........................................passed
-And Click on save button....................................................passed
-Then Verify the error message is "This field is invalid"....................passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Page Test" name="Testing Update email functionality 2" time="19.819">
-<system-out><![CDATA[Given user is on the home page..............................................passed
-And sign in as "user".......................................................passed
-And Click on user name and click on User info...............................passed
-And Type "usergmail.com" in email textbox...................................passed
-And Click on save button....................................................passed
-Then Verify the error message is "This field is invalid"....................passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Page Test" name="Testing Update email functionality 3" time="21.307">
-<system-out><![CDATA[Given user is on the home page..............................................passed
-And sign in as "user".......................................................passed
-And Click on user name and click on User info...............................passed
-And Type "user@.com" in email textbox.......................................passed
-And Click on save button....................................................passed
-Then Verify the error message is "This field is invalid"....................passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Page Test" name="Testing Update email functionality 4" time="24.665">
-<system-out><![CDATA[Given user is on the home page..............................................passed
-And sign in as "user".......................................................passed
-And Click on user name and click on User info...............................passed
-And Type "user@gmailcom" in email textbox...................................passed
-And Click on save button....................................................passed
-Then Verify the error message is "This field is invalid"....................passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Page Test" name="Testing Update email functionality 5" time="24.556">
-<system-out><![CDATA[Given user is on the home page..............................................passed
-And sign in as "user".......................................................passed
-And Click on user name and click on User info...............................passed
-And Type ".com@" in email textbox...........................................passed
-And Click on save button....................................................passed
-Then Verify the error message is "This field is invalid"....................passed
-]]></system-out>
-</testcase>
-<testcase classname="User Info Page Test" name="Testing Update email functionality 6" time="20.272">
-<system-out><![CDATA[Given user is on the home page..............................................passed
-And sign in as "user".......................................................passed
-And Click on user name and click on User info...............................passed
-And Type "212.com@" in email textbox........................................passed
-And Click on save button....................................................passed
-Then Verify the error message is "This field is invalid"....................passed
-]]></system-out>
+And Click on user icon and click on Password................................passed
+And Enter "team21User" to the current password textbox......................passed
+Given Enter "team21User" to the New password textbox........................passed
+And Enter "team21User" to the New confirmation password textbox.............passed
+And Click on the save button................................................passed
+Then There should be a Error Message........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at gmibank.stepdefinitions.PasswordChange.there_should_be_a_Error_Message(PasswordChange.java:52)
+	at ✽.There should be a Error Message(file:///C:/Users/user/IdeaProjects/gmibankproject/src/test/resources/features/PasswordChange.feature:13)
+]]></failure>
 </testcase>
 </testsuite>
