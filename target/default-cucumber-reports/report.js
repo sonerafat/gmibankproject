@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_003_Registration_Password.feature");
 formatter.feature({
   "name": "Go to Registration Page",
+=======
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/registration.feature");
+formatter.feature({
+  "name": "Go to homepage",
+>>>>>>> master
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -9,6 +15,7 @@ formatter.feature({
     }
   ]
 });
+<<<<<<< HEAD
 formatter.scenarioOutline({
   "name": "TC_0001 User type to New Password_There should be at least 1 uppercase char",
   "description": "",
@@ -797,6 +804,8 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
+=======
+>>>>>>> master
 formatter.background({
   "name": "User go to GMI Bank homepage",
   "description": "",
@@ -816,6 +825,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
+<<<<<<< HEAD
   "name": "TC_0005 User type to New Password_There should be at least 7 chars",
   "description": "",
   "keyword": "Scenario Outline",
@@ -895,12 +905,18 @@ formatter.feature({
   "name": "go to Registration Page",
   "description": "",
   "keyword": "Feature",
+=======
+  "name": "TC_001-007 User type several informations",
+  "description": "",
+  "keyword": "Scenario",
+>>>>>>> master
   "tags": [
     {
       "name": "@registrationpage"
     }
   ]
 });
+<<<<<<< HEAD
 formatter.background({
   "name": "User go to GMI Bank homepage",
   "description": "",
@@ -955,21 +971,38 @@ formatter.step({
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Username(java.lang.String)"
+=======
+formatter.step({
+  "name": "user clik to register box",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_clik_to_register_box()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "user click to Password",
   "keyword": "And "
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Password()"
+=======
+  "name": "user clik to register button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_clik_to_register_button()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "user type Password \"team21Customer\"",
   "keyword": "And "
 });
@@ -1056,11 +1089,19 @@ formatter.step({
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_got_to_GMI_Bank_homepage()"
+=======
+  "name": "user clik to SSn number box and send \"454-42-1223\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_clik_to_SSn_number_box_and_send(java.lang.String)"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "user click to dropdown button",
   "keyword": "And "
 });
@@ -1076,41 +1117,73 @@ formatter.step({
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Sign_in_button()"
+=======
+  "name": "user click to first name box and send \"Hans\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_first_name_box_and_send(java.lang.String)"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "user click User name button",
   "keyword": "And "
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_User_name_button()"
+=======
+  "name": "user click to last name box and send \"Kern\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_last_name_box_and_send(java.lang.String)"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "user type Username \"team21customer\"",
   "keyword": "And "
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Username(java.lang.String)"
+=======
+  "name": "user click to address box and send \"Ernst Straße 2, 17299 Hamburg\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_address_box_and_send(java.lang.String)"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "user click to Password",
   "keyword": "And "
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Password()"
+=======
+  "name": "user click to mobile phone number box and send \"404-421-2236\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_mobile_phone_number_box_and_send(java.lang.String)"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
   "name": "user type Password \"team21Customer\"",
   "keyword": "And "
 });
@@ -1146,10 +1219,18 @@ formatter.step({
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_Manage_Accounts_button()"
+=======
+  "name": "user click to username box and send \"hanskern1234\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_username_box_and_send(java.lang.String)"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
+<<<<<<< HEAD
 formatter.scenario({
   "name": "TC_0002 User can view transaction",
   "description": "",
@@ -1166,6 +1247,14 @@ formatter.step({
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_view_transaction()"
+=======
+formatter.step({
+  "name": "user click to email box and send \"hanskern@fakemail.com\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_email_box_and_send(java.lang.String)"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"

@@ -1,9 +1,16 @@
 [
   {
+<<<<<<< HEAD
     "line": 3,
     "elements": [
       {
         "line": 5,
+=======
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+>>>>>>> master
         "name": "User go to GMI Bank homepage",
         "description": "",
         "type": "background",
@@ -11,10 +18,17 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 18131000000,
               "status": "passed"
             },
             "line": 6,
+=======
+              "duration": 17367000000,
+              "status": "passed"
+            },
+            "line": 4,
+>>>>>>> master
             "name": "user got to GMI Bank homepage",
             "match": {
               "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_got_to_GMI_Bank_homepage()"
@@ -24,11 +38,19 @@
         ]
       },
       {
+<<<<<<< HEAD
         "start_timestamp": "2020-12-13T16:04:41.167Z",
         "before": [
           {
             "result": {
               "duration": 3000000,
+=======
+        "start_timestamp": "2020-12-12T09:39:07.608Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+>>>>>>> master
               "status": "passed"
             },
             "match": {
@@ -36,6 +58,7 @@
             }
           }
         ],
+<<<<<<< HEAD
         "line": 18,
         "name": "TC_0001 User type to New Password_There should be at least 1 uppercase char",
         "description": "",
@@ -44,6 +67,16 @@
           {
             "result": {
               "duration": 1699000000,
+=======
+        "line": 6,
+        "name": "TC_001-007 User type several informations",
+        "description": "",
+        "id": "go-to-homepage;tc-001-007-user-type-several-informations",
+        "after": [
+          {
+            "result": {
+              "duration": 381000000,
+>>>>>>> master
               "status": "passed"
             },
             "match": {
@@ -52,6 +85,7 @@
           }
         ],
         "type": "scenario",
+<<<<<<< HEAD
         "keyword": "Scenario Outline",
         "steps": [
           {
@@ -87,11 +121,37 @@
             "name": "user click to New Password button",
             "match": {
               "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_New_Password_button()"
+=======
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 103000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clik to register box",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_clik_to_register_box()"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 194000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clik to register button",
+            "match": {
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_clik_to_register_button()"
+>>>>>>> master
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
               "duration": 546000000,
               "status": "passed"
             },
@@ -230,11 +290,81 @@
             "name": "user click to New Password button",
             "match": {
               "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_New_Password_button()"
+=======
+              "duration": 189000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clik to SSn number box and send \"454-42-1223\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"454-42-1223\"",
+                  "offset": 37
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_clik_to_SSn_number_box_and_send(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 607000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click to first name box and send \"Hans\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Hans\"",
+                  "offset": 38
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_first_name_box_and_send(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user click to last name box and send \"Kern\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Kern\"",
+                  "offset": 37
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_last_name_box_and_send(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 225000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user click to address box and send \"Ernst Straße 2, 17299 Hamburg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ernst Straße 2, 17299 Hamburg\"",
+                  "offset": 35
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_address_box_and_send(java.lang.String)"
+>>>>>>> master
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
               "duration": 533000000,
               "status": "passed"
             },
@@ -367,11 +497,45 @@
             "name": "user click to New Password button",
             "match": {
               "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_New_Password_button()"
+=======
+              "duration": 130000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user click to mobile phone number box and send \"404-421-2236\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"404-421-2236\"",
+                  "offset": 47
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_mobile_phone_number_box_and_send(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 165000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user click to username box and send \"hanskern1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hanskern1234\"",
+                  "offset": 36
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_username_box_and_send(java.lang.String)"
+>>>>>>> master
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+<<<<<<< HEAD
               "duration": 407000000,
               "status": "passed"
             },
@@ -1372,6 +1536,21 @@
             "name": "user view transaction",
             "match": {
               "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_view_transaction()"
+=======
+              "duration": 222000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click to email box and send \"hanskern@fakemail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"hanskern@fakemail.com\"",
+                  "offset": 33
+                }
+              ],
+              "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_email_box_and_send(java.lang.String)"
+>>>>>>> master
             },
             "keyword": "Then "
           }
@@ -1383,11 +1562,19 @@
         ]
       }
     ],
+<<<<<<< HEAD
     "name": "go to Registration Page",
     "description": "",
     "id": "go-to-registration-page",
     "keyword": "Feature",
     "uri": "file:src/test/resources/features/US_015_Manage_Account.feature",
+=======
+    "name": "Go to homepage",
+    "description": "",
+    "id": "go-to-homepage",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/registration.feature",
+>>>>>>> master
     "tags": [
       {
         "name": "@registrationpage",

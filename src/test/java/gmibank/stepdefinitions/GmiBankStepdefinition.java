@@ -1,6 +1,6 @@
 package gmibank.stepdefinitions;
 
-import gmibank.pages.GmiBankPage;
+
 import gmibank.utilities.ConfigReader;
 import gmibank.utilities.Driver;
 import io.cucumber.java.en.Given;
@@ -10,7 +10,7 @@ import org.openqa.selenium.Keys;
 
 public class GmiBankStepdefinition {
 
-GmiBankPage gmiBankPage = new GmiBankPage();
+
 
 //    @Given("user got to GMI Bank homepage")
 //    public void user_got_to_GMI_Bank_homepage() {

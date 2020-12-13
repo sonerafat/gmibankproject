@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="136.042">
 <testcase classname="Go to Registration Page" name="TC_0001 User type to New Password_There should be at least 1 uppercase char" time="22.701">
 <system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
@@ -113,6 +114,20 @@ Then user click Sign in.....................................................pass
 Then user click My Operation button.........................................passed
 Then user click Manage Accounts button......................................passed
 Then user view transaction..................................................passed
+=======
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.234">
+<testcase classname="Go to homepage" name="TC_001-007 User type several informations" time="19.954">
+<system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
+And user clik to register box...............................................passed
+And user clik to register button............................................passed
+And user clik to SSn number box and send "454-42-1223"......................passed
+And user click to first name box and send "Hans"............................passed
+And user click to last name box and send "Kern".............................passed
+And user click to address box and send "Ernst Straße 2, 17299 Hamburg"......passed
+And user click to mobile phone number box and send "404-421-2236"...........passed
+And user click to username box and send "hanskern1234"......................passed
+Then user click to email box and send "hanskern@fakemail.com"...............passed
+>>>>>>> master
 ]]></system-out>
 </testcase>
 </testsuite>
