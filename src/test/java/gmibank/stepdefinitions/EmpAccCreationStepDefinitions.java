@@ -166,16 +166,6 @@ public class EmpAccCreationStepDefinitions {
         Driver.selectDropdown(empAccCreationPage.accountTypeBox, 0);
         Assert.assertEquals(empAccCreationPage.accountTypeBox.getAttribute("value"), "Please select account type");
     }
-//        Driver.selectDropdown(empAccCreationPage.accountTypeBox, 1);
-//        Assert.assertEquals(empAccCreationPage.accountTypeBox.getAttribute("value"), "SAVING");
-//
-//        Driver.selectDropdown(empAccCreationPage.accountTypeBox, 2);
-//        Assert.assertEquals(empAccCreationPage.accountTypeBox.getAttribute("value"), "CREDIT_CARD");
-//
-//        Driver.selectDropdown(empAccCreationPage.accountTypeBox, 3);
-//        Assert.assertEquals(empAccCreationPage.accountTypeBox.getAttribute("value"), "INVESTING");
-
-
     @Given("user does not select any option and gets warning")
     public void user_does_not_select_any_option_and_gets_warning(){
         Driver.selectDropdown(empAccCreationPage.accountTypeBox, 0);
