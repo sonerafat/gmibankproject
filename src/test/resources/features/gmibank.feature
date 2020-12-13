@@ -1,4 +1,4 @@
-@gmihomepage
+
 Feature: Go to homepage
     Background: User go to GMI Bank homepage
         Given user go to GMI Bank homepage

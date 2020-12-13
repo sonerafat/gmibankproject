@@ -58,7 +58,7 @@ public class Driver {
 
     public static void closeDriver() {
         if (driver != null) {
-            //driver.quit();
+            driver.quit();
 
             driver = null;
         }
@@ -106,6 +106,17 @@ public class Driver {
         for (int i = 0; i < timeout; i++) {
             try {
                 element.sendKeys(text);
+                return;
+            } catch (WebDriverException e) {
+                wait(1);
+            }
+        }
+    }
+
+    public static void waitAndClick(WebElement element, int timeout) {
+        for (int i = 0; i < timeout; i++) {
+            try {
+                element.click();
                 return;
             } catch (WebDriverException e) {
                 wait(1);
