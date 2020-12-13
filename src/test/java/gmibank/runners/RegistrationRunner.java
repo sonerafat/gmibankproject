@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         //plugin = "html:target\\default-cucumber-reports",
         features ="src/test/resources/features",
         glue = "gmibank/stepdefinitions",
-        tags = "@gmihomepage",
+        tags = "@registrationpage",
         dryRun = false
 )
-public class GmiRunner {
+public class RegistrationRunner {
 }
