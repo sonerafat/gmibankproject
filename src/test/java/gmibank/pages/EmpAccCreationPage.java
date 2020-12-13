@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import java.util.List;
+
 public class EmpAccCreationPage {
 
     public EmpAccCreationPage(){
@@ -57,6 +59,9 @@ public class EmpAccCreationPage {
 
     @FindBy(id = "tp-account-accountType")
     public WebElement accountTypeBox;
+
+    @FindBy(id = "tp-account-accountType")
+    public List<WebElement> accountTypeBoxL;
 
     @FindBy(id = "tp-account-accountStatusType")
     public WebElement accountStatusBox;

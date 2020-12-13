@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="59.203">
-    <testcase classname="Go to homepage" name="TC001 Employee Creates Description" time="41.689">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;This field is required.&quot;}&#10;  (Session info: chrome=86.0.4240.198)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-KNL8SGH', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 7056656276b4b7bcc5581b91d9d37e05&#10;*** Element info: {Using=link text, value=This field is required.}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given employee goes to GMI Bank homepage....................................passed
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="175.567">
+    <testcase classname="Go to homepage" name="TC001 Employee Creates Description" time="44.698">
+        <system-out><![CDATA[Given employee goes to GMI Bank homepage....................................passed
 And user click to login icon................................................passed
 And user click to Sign in...................................................passed
 And user click to Username box and send "team21employee"....................passed
@@ -10,84 +10,113 @@ And user click to Sign in button............................................pass
 And user click to My Operations button......................................passed
 And user click to Manage Accounts button....................................passed
 And user click to Create New Account button.................................passed
-And user click to Description box and send " "..............................passed
-Then verify the message is "This field is required."........................failed
+And user leaves the description box blank...................................passed
+Then verify the message is "This field is required."........................passed
+And user click again to Description box and send "My Account"...............passed
+Then verify the warning message is not displayed............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Go to homepage" name="TC002 Employee Provides Balance" time="20.807">
+        <failure message="expected [This field is required. ] but found [This field is required.]" type="java.lang.AssertionError"><![CDATA[Given employee goes to GMI Bank homepage....................................passed
+And user click to login icon................................................passed
+And user click to Sign in...................................................passed
+And user click to Username box and send "team21employee"....................passed
+And user click to Password box and send "team21Employee"....................passed
+And user click to Sign in button............................................passed
+And user click to My Operations button......................................passed
+And user click to Manage Accounts button....................................passed
+And user click to Create New Account button.................................passed
+And user leaves the Balance box blank.......................................failed
+Then verify the message is "This field is required."........................skipped
+And user provides string Balance "A"........................................skipped
+Then verify the balance message is "This field should be a number"..........skipped
+And user provides symbol Balance "*"........................................skipped
+Then verify the balance message is "This field should be a number"..........skipped
+And user provides positive Balance "1000"...................................skipped
+Then verify the balance warning message is not displayed....................skipped
+And user provides negative Balance "-1000"..................................skipped
+Then verify the wrong balance warning is "This field should not be a negative number".skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"This field is required."}
-  (Session info: chrome=86.0.4240.198)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-KNL8SGH', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7056656276b4b7bcc5581b91d9d37e05
-*** Element info: {Using=link text, value=This field is required.}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
-	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.getText(Unknown Source)
-	at gmibank.stepdefinitions.EmpAccCreationStepDefinitions.verify_the_message_is(EmpAccCreationStepDefinitions.java:68)
-	at ✽.verify the message is "This field is required."(file:///C:/Users/User/IdeaProjects/GmiBankFramework/src/test/resources/features/empAccCreation.feature:16)
+java.lang.AssertionError: expected [This field is required. ] but found [This field is required.]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at gmibank.stepdefinitions.EmpAccCreationStepDefinitions.user_user_leaves_the_Balance_box_blank(EmpAccCreationStepDefinitions.java:101)
+	at ✽.user leaves the Balance box blank(file:///C:/Users/User/IdeaProjects/GmiBankFramework/src/test/resources/features/empAccCreation.feature:23)
 ]]></failure>
     </testcase>
-    <testcase classname="Go to homepage" name="" time="17.029">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#login\-item&quot;}&#10;  (Session info: chrome=86.0.4240.198)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-KNL8SGH', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 7056656276b4b7bcc5581b91d9d37e05&#10;*** Element info: {Using=id, value=login-item}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given employee goes to GMI Bank homepage....................................passed
+    <testcase classname="Go to homepage" name="TC003 Employee Selects AccountType" time="29.158">
+        <failure message="expected [Please select account type] but found [CHECKING]" type="java.lang.AssertionError"><![CDATA[Given employee goes to GMI Bank homepage....................................passed
 And user click to login icon................................................passed
-And user click to Sign in...................................................failed
-And user click to Username box and send "team21employee"....................skipped
-And user click to Password box and send "team21Employee"....................skipped
-And user click to Sign in button............................................skipped
-And user click to My Operations button......................................skipped
-And user click to Manage Accounts button....................................skipped
-And user click to Create New Account button.................................skipped
-And user click to Description box and send "My Account".....................skipped
-Then verify the message is not displayed....................................skipped
+And user click to Sign in...................................................passed
+And user click to Username box and send "team21employee"....................passed
+And user click to Password box and send "team21Employee"....................passed
+And user click to Sign in button............................................passed
+And user click to My Operations button......................................passed
+And user click to Manage Accounts button....................................passed
+And user click to Create New Account button.................................passed
+And user selects Account Type and verifies the options......................passed
+And user does not select any option and checks the warning..................failed
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#login\-item"}
-  (Session info: chrome=86.0.4240.198)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-KNL8SGH', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59567}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 7056656276b4b7bcc5581b91d9d37e05
-*** Element info: {Using=id, value=login-item}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at gmibank.stepdefinitions.EmpAccCreationStepDefinitions.user_clik_to_Sign_in(EmpAccCreationStepDefinitions.java:27)
-	at ✽.user click to Sign in(file:///C:/Users/User/IdeaProjects/GmiBankFramework/src/test/resources/features/empAccCreation.feature:6)
+java.lang.AssertionError: expected [Please select account type] but found [CHECKING]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at gmibank.stepdefinitions.EmpAccCreationStepDefinitions.user_does_not_select_any_option_and_checks_the_warning(EmpAccCreationStepDefinitions.java:167)
+	at ✽.user does not select any option and checks the warning(file:///C:/Users/User/IdeaProjects/GmiBankFramework/src/test/resources/features/empAccCreation.feature:45)
+]]></failure>
+    </testcase>
+    <testcase classname="Go to homepage" name="TC004 Employee Selects Account Status Type" time="39.692">
+        <failure message="expected [SUSPENDED] but found [SUESPENDED]" type="java.lang.AssertionError"><![CDATA[Given employee goes to GMI Bank homepage....................................passed
+And user click to login icon................................................passed
+And user click to Sign in...................................................passed
+And user click to Username box and send "team21employee"....................passed
+And user click to Password box and send "team21Employee"....................passed
+And user click to Sign in button............................................passed
+And user click to My Operations button......................................passed
+And user click to Manage Accounts button....................................passed
+And user click to Create New Account button.................................passed
+And user selects Account Status Type and verifies the options...............failed
+And user does not select any option and gets warning........................skipped
+
+StackTrace:
+java.lang.AssertionError: expected [SUSPENDED] but found [SUESPENDED]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at gmibank.stepdefinitions.EmpAccCreationStepDefinitions.user_selects_Account_Status_Type_and_verifies_the_options(EmpAccCreationStepDefinitions.java:191)
+	at ✽.user selects Account Status Type and verifies the options(file:///C:/Users/User/IdeaProjects/GmiBankFramework/src/test/resources/features/empAccCreation.feature:49)
+]]></failure>
+    </testcase>
+    <testcase classname="Go to homepage" name="TC005 Selecting employee" time="40.367">
+        <failure message="expected [emrullahd] but found []" type="java.lang.AssertionError"><![CDATA[Given employee goes to GMI Bank homepage....................................passed
+And user click to login icon................................................passed
+And user click to Sign in...................................................passed
+And user click to Username box and send "team21employee"....................passed
+And user click to Password box and send "team21Employee"....................passed
+And user click to Sign in button............................................passed
+And user click to My Operations button......................................passed
+And user click to Manage Accounts button....................................passed
+And user click to Create New Account button.................................passed
+And user click to Employee box and select employee as "emrullahd"...........failed
+
+StackTrace:
+java.lang.AssertionError: expected [emrullahd] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at gmibank.stepdefinitions.EmpAccCreationStepDefinitions.user_click_to_Employee_box_and_select_employee_as(EmpAccCreationStepDefinitions.java:200)
+	at ✽.user click to Employee box and select employee as "emrullahd"(file:///C:/Users/User/IdeaProjects/GmiBankFramework/src/test/resources/features/empAccCreation.feature:54)
 ]]></failure>
     </testcase>
 </testsuite>

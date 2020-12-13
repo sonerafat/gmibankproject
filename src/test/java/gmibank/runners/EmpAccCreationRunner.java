@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
             //plugin = "html:target\\default-cucumber-reports",
             features ="src/test/resources/features",
             glue = "gmibank/stepdefinitions",
-            tags = "@employeesignin",
+            tags = "@employeeAccCreation",
             dryRun = false
     )
     public class EmpAccCreationRunner {
