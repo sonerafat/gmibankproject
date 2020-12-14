@@ -1,4 +1,7 @@
 package gmibank.pages;
+
+
+
 import gmibank.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -8,6 +11,7 @@ public class LoginPage {
     public LoginPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
+
     @FindBy(xpath = "//*[@id=\"account-menu\"]/a")
     public WebElement login_icon;
     @FindBy(xpath = "//*[@id='login-item']/span")

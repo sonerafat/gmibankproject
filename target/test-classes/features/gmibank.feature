@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @gmihomepage
 <<<<<<< HEAD
 =======
@@ -7,8 +8,9 @@ Feature: Go to homepage
         Given user go to GMI Bank homepage
 >>>>>>> Emrullah
 =======
+=======
+>>>>>>> refs/remotes/origin/master
 
->>>>>>> master
 Feature: Go to homepage
     Background: User go to GMI Bank homepage
         Given user got to GMI Bank homepage
@@ -29,8 +31,5 @@ Feature: Go to homepage
 
 
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> master
