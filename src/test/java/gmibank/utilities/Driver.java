@@ -1,6 +1,7 @@
 package gmibank.utilities;
 
 import com.google.common.base.Function;
+import gmibank.pages.UserInfoPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.*;
@@ -22,6 +23,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class Driver {
+
     private Driver() {
     }
 
@@ -70,6 +72,26 @@ public class Driver {
             Thread.sleep(1000 * secs);
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }
+    }
+    public static void login (String userType){
+        UserInfoPage userInfoPage = new UserInfoPage();
+        userInfoPage.accountItem.click();
+        userInfoPage.login.click();
+        String entranceUserName = userType + "name";
+        String entrancePassword = userType+ "Password";
+        userInfoPage.username.sendKeys(ConfigReader.getProperty(entranceUserName));
+        userInfoPage.password.sendKeys(ConfigReader.getProperty(entrancePassword));
+        userInfoPage.signInButton.click();
+    }
+    public static void waitAndClick(WebElement element, int timeout) {
+        for (int i = 0; i < timeout; i++) {
+            try {
+                element.click();
+                return;
+            } catch (WebDriverException e) {
+                wait(1);
+            }
         }
     }
     public static void switchToWindow(String targetTitle) {
