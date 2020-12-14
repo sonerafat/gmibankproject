@@ -165,6 +165,7 @@ public class EmpAccCreationStepDefinitions {
     public void user_does_not_select_any_option_and_checks_the_warning() {
         Driver.selectDropdown(empAccCreationPage.accountTypeBox, 0);
         Assert.assertEquals(empAccCreationPage.accountTypeBox.getAttribute("value"), "Please select account type");
+
     }
     @Given("user does not select any option and gets warning")
     public void user_does_not_select_any_option_and_gets_warning(){
