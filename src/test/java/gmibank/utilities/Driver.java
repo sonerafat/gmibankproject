@@ -1,4 +1,5 @@
 package gmibank.utilities;
+
 import com.google.common.base.Function;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
@@ -102,16 +103,6 @@ public class Driver {
         return elemTexts;
     }
 
-    public static void waitAndSendText(WebElement element,String text, int timeout) {
-        for (int i = 0; i < timeout; i++) {
-            try {
-                element.sendKeys(text);
-                return;
-            } catch (WebDriverException e) {
-                wait(1);
-            }
-        }
-    }
 
     public static List<String> getElementsText(By locator) {
         List<WebElement> elems = Driver.getDriver().findElements(locator);
@@ -248,7 +239,14 @@ public class Driver {
         select.selectByIndex(optionIndex);
         return select.getFirstSelectedOption();
     }
-    public static void selectDropdown (WebElement element, int  countryIndex){
+
+
+    public static void selectDropdown (WebElement element, int  index){
+        Select dropdown = new Select(element);
+        dropdown.selectByIndex(index);
+    }
+
+    public static void selectDropdownCountry (WebElement element, int  countryIndex){
         Select dropdown = new Select(element);
         dropdown.selectByIndex(countryIndex);
 //select dropdownlist
@@ -274,6 +272,7 @@ public class Driver {
             }
         }
     }
+
 
 
 
@@ -381,4 +380,15 @@ public class Driver {
             }
         });
     }
-}
+
+    public static void waitAndSendText(WebElement element,String text, int timeout) {
+        for (int i = 0; i < timeout; i++) {
+            try {
+                element.sendKeys(text);
+                return;
+            } catch (WebDriverException e) {
+                wait(1);
+            }
+        }
+    }}
+
