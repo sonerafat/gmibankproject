@@ -248,6 +248,11 @@ public class Driver {
         select.selectByIndex(optionIndex);
         return select.getFirstSelectedOption();
     }
+
+    public static void selectDropdown (WebElement element, int  index){
+        Select dropdown = new Select(element);
+        dropdown.selectByIndex(index);
+    }
     /**
      * Clicks on an element using JavaScript
      *

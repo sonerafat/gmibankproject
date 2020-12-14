@@ -1,7 +1,11 @@
 <<<<<<< HEAD
+@registrationpage
+=======
+<<<<<<< HEAD
 
 =======
 @registrationpage
+>>>>>>> master
 >>>>>>> master
 Feature: Go to homepage
     Background: User go to GMI Bank homepage
@@ -13,7 +17,11 @@ Feature: Go to homepage
 <<<<<<< HEAD
             And user clik to SSn number box and send "454-42-12230"
 =======
+<<<<<<< HEAD
+            And user clik to SSn number box and send "454-42-12230"
+=======
             And user clik to SSn number box and send "454-42-1223"
+>>>>>>> master
 >>>>>>> master
             And user click to first name box and send "Hans"
             And user click to last name box and send "Kern"
