@@ -17,11 +17,11 @@ public class US_015_Manege_Account_sd<WebElements> {
 
 
     US_015_Manage_Account us_015_manage_account= new US_015_Manage_Account();
-    @Then("user click to Sign in button")
-    public void user_click_to_Sign_in_button() {
-
-          us_015_manage_account.signin.click();
-    }
+//    @Then("user click to Sign in button")
+//    public void user_click_to_Sign_in_button() {
+//
+//          us_015_manage_account.signin.click();
+//    }
 
     @Then("user click User name button")
     public void user_click_User_name_button() {

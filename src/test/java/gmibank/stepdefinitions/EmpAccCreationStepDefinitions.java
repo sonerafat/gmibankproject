@@ -29,10 +29,10 @@ public class EmpAccCreationStepDefinitions {
         Driver.getDriver().get(ConfigReader.getProperty("gmiBank_url"));
     }
 
-    @Given("user click to login icon")
-    public void user_clik_to_login_icon() {
-        loginPage.login_icon.click();
-    }
+//    @Given("user click to login icon")
+//    public void user_clik_to_login_icon() {
+//        loginPage.login_icon.click();
+//    }
 
     @Given("user click to Sign in")
     public void user_clik_to_Sign_in() {
