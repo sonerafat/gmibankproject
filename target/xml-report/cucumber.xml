@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <<<<<<< HEAD
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.012"/>
+=======
+<<<<<<< HEAD
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.982">
+<testcase classname="Password Strength" name="Edit Password" time="24.327">
+<failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user is on the home page..............................................passed
+And sign in as "user".......................................................passed
+And Click on user icon and click on Password................................passed
+And Enter "team21User" to the current password textbox......................passed
+Given Enter "team21User" to the New password textbox........................passed
+And Enter "team21User" to the New confirmation password textbox.............passed
+And Click on the save button................................................passed
+Then There should be a Error Message........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at gmibank.stepdefinitions.PasswordChange.there_should_be_a_Error_Message(PasswordChange.java:52)
+	at ✽.There should be a Error Message(file:///C:/Users/user/IdeaProjects/gmibankproject/src/test/resources/features/PasswordChange.feature:13)
+]]></failure>
+</testcase>
+=======
+<<<<<<< HEAD
 <testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="136.042">
 <testcase classname="Go to Registration Page" name="TC_0001 User type to New Password_There should be at least 1 uppercase char" time="22.701">
 <system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
@@ -130,4 +156,6 @@ Then user click to email box and send "hanskern@fakemail.com"...............pass
 >>>>>>> master
 ]]></system-out>
 </testcase>
+>>>>>>> master
 </testsuite>
+>>>>>>> refs/remotes/origin/master

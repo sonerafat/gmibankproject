@@ -1,4 +1,21 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/PasswordChange.feature");
+formatter.feature({
+  "name": "Password Strength",
+  "description": "",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@PasswordStrength"
+    }
+  ]
+});
+formatter.background({
+  "name": "Entrance of the page",
+=======
+<<<<<<< HEAD
 $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_003_Registration_Password.feature");
 formatter.feature({
   "name": "Go to Registration Page",
@@ -919,6 +936,7 @@ formatter.feature({
 <<<<<<< HEAD
 formatter.background({
   "name": "User go to GMI Bank homepage",
+>>>>>>> master
   "description": "",
   "keyword": "Background"
 });
@@ -926,6 +944,13 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "user is on the home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.user_is_on_the_home_page()"
+=======
   "name": "user got to GMI Bank homepage",
   "keyword": "Given "
 });
@@ -961,11 +986,19 @@ formatter.step({
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_User_name_button()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "sign in as \"user\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.UserInfo.sign_in_as(java.lang.String)"
+=======
   "name": "user type Username \"team21customer\"",
   "keyword": "And "
 });
@@ -979,11 +1012,19 @@ formatter.step({
 formatter.match({
   "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_clik_to_register_box()"
 >>>>>>> master
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "Click on user icon and click on Password",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.PasswordChange.click_on_user_icon_and_click_on_Password()"
+=======
 <<<<<<< HEAD
   "name": "user click to Password",
   "keyword": "And "
@@ -997,11 +1038,19 @@ formatter.match({
 formatter.match({
   "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_clik_to_register_button()"
 >>>>>>> master
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "Enter \"team21User\" to the current password textbox.",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.PasswordChange.enter_to_the_current_password_textbox(java.lang.String)"
+=======
 <<<<<<< HEAD
   "name": "user type Password \"team21Customer\"",
   "keyword": "And "
@@ -1038,21 +1087,40 @@ formatter.step({
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_Manage_Accounts_button()"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
+<<<<<<< HEAD
+  "name": "Edit Password",
+=======
   "name": "TC_0001 User should see all account types and balace populated",
+>>>>>>> master
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
+<<<<<<< HEAD
+      "name": "@PasswordStrength"
+    },
+    {
+      "name": "@edit"
+=======
       "name": "@registrationpage"
+>>>>>>> master
     }
   ]
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "Enter \"team21User\" to the New password textbox.",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.PasswordChange.enter_to_the_New_password_textbox(java.lang.String)"
+=======
   "name": "check all account types",
   "keyword": "Then "
 });
@@ -1160,11 +1228,19 @@ formatter.match({
 formatter.match({
   "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_address_box_and_send(java.lang.String)"
 >>>>>>> master
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "Enter \"team21User\" to the New confirmation password textbox.",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.PasswordChange.enter_to_the_New_confirmation_password_textbox(java.lang.String)"
+=======
 <<<<<<< HEAD
   "name": "user click to Password",
   "keyword": "And "
@@ -1178,22 +1254,44 @@ formatter.match({
 formatter.match({
   "location": "gmibank.stepdefinitions.RegistrationStepdefinition.user_click_to_mobile_phone_number_box_and_send(java.lang.String)"
 >>>>>>> master
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
 <<<<<<< HEAD
+  "name": "Click on the save button.",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.PasswordChange.click_on_the_save_button()"
+=======
+<<<<<<< HEAD
   "name": "user type Password \"team21Customer\"",
   "keyword": "And "
 });
 formatter.match({
   "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Password(java.lang.String)"
+>>>>>>> master
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
+<<<<<<< HEAD
+  "name": "There should be a Error Message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "gmibank.stepdefinitions.PasswordChange.there_should_be_a_Error_Message()"
+});
+formatter.result({
+  "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:97)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:969)\r\n\tat org.testng.Assert.assertTrue(Assert.java:43)\r\n\tat org.testng.Assert.assertTrue(Assert.java:53)\r\n\tat gmibank.stepdefinitions.PasswordChange.there_should_be_a_Error_Message(PasswordChange.java:52)\r\n\tat ✽.There should be a Error Message(file:///C:/Users/user/IdeaProjects/gmibankproject/src/test/resources/features/PasswordChange.feature:13)\r\n",
+  "status": "failed"
+});
+formatter.embedding("image/png", "embedded0.png", "screenshots");
+=======
   "name": "user click Sign in",
   "keyword": "Then "
 });
@@ -1259,7 +1357,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+>>>>>>> master
 formatter.after({
   "status": "passed"
 });
 });
+>>>>>>> refs/remotes/origin/master
