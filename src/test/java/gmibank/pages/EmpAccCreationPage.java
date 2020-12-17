@@ -15,8 +15,8 @@ public class EmpAccCreationPage {
         PageFactory.initElements(Driver.getDriver(), this );
     }
 
-//    @FindBy(id = "account-menu")
-//    public WebElement loginIcon;
+    @FindBy(id = "account-menu")
+    public WebElement loginIcon;
 
     @FindBy(id = "login-item")
     public WebElement signInButton;

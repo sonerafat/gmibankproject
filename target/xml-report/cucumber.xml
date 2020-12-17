@@ -1,157 +1,122 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.982">
-<testcase classname="Password Strength" name="Edit Password" time="24.327">
-<failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[Given user is on the home page..............................................passed
-And sign in as "user".......................................................passed
-And Click on user icon and click on Password................................passed
-And Enter "team21User" to the current password textbox......................passed
-Given Enter "team21User" to the New password textbox........................passed
-And Enter "team21User" to the New confirmation password textbox.............passed
-And Click on the save button................................................passed
-Then There should be a Error Message........................................failed
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="135.341">
+    <testcase classname="Go to homepage" name="TC001 Employee Creates Description" time="45.603">
+        <system-out><![CDATA[Given employee goes to GMI Bank homepage....................................passed
+And user clicks to login icon...............................................passed
+And user clicks to Sign in..................................................passed
+And user click to Username box and send "team21employee"....................passed
+And user click to Password box and send "team21Employee"....................passed
+And user clicks to Sign in button...........................................passed
+And user click to My Operations button......................................passed
+And user click to Manage Accounts button....................................passed
+And user click to Create New Account button.................................passed
+And user leaves the description box blank...................................passed
+Then verify the message is "This field is required."........................passed
+And user click again to Description box and send "My Account"...............passed
+Then verify the warning message is not displayed............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Go to homepage" name="TC002 Employee Provides Balance" time="18.932">
+        <failure message="expected [This field is required. ] but found [This field is required.]" type="java.lang.AssertionError"><![CDATA[Given employee goes to GMI Bank homepage....................................passed
+And user clicks to login icon...............................................passed
+And user clicks to Sign in..................................................passed
+And user click to Username box and send "team21employee"....................passed
+And user click to Password box and send "team21Employee"....................passed
+And user clicks to Sign in button...........................................passed
+And user click to My Operations button......................................passed
+And user click to Manage Accounts button....................................passed
+And user click to Create New Account button.................................passed
+And user leaves the Balance box blank.......................................failed
+Then verify the message is "This field is required."........................skipped
+And user provides string Balance "A"........................................skipped
+Then verify the balance message is "This field should be a number"..........skipped
+And user provides symbol Balance "*"........................................skipped
+Then verify the balance message is "This field should be a number"..........skipped
+And user provides positive Balance "1000"...................................skipped
+Then verify the balance warning message is not displayed....................skipped
+And user provides negative Balance "-1000"..................................skipped
+Then verify the wrong balance warning is "This field should not be a negative number".skipped
 
 StackTrace:
-java.lang.AssertionError: expected [true] but found [false]
+java.lang.AssertionError: expected [This field is required. ] but found [This field is required.]
 	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.failNotEquals(Assert.java:969)
-	at org.testng.Assert.assertTrue(Assert.java:43)
-	at org.testng.Assert.assertTrue(Assert.java:53)
-	at gmibank.stepdefinitions.PasswordChange.there_should_be_a_Error_Message(PasswordChange.java:52)
-	at ✽.There should be a Error Message(file:///C:/Users/user/IdeaProjects/gmibankproject/src/test/resources/features/PasswordChange.feature:13)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at gmibank.stepdefinitions.EmpAccCreationStepDefinitions.user_user_leaves_the_Balance_box_blank(EmpAccCreationStepDefinitions.java:101)
+	at ✽.user leaves the Balance box blank(file:///C:/Users/User/IdeaProjects/GmiBankFramework/src/test/resources/features/empAccCreation.feature:23)
 ]]></failure>
-</testcase>
-=======
-<<<<<<< HEAD
-<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="136.042">
-<testcase classname="Go to Registration Page" name="TC_0001 User type to New Password_There should be at least 1 uppercase char" time="22.701">
-<system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
-Given user click to dropdown button.........................................passed
-Then user click to register button..........................................passed
-And user click to New Password button.......................................passed
-Then user type New "<Aaaaaaa>"..............................................passed
-Then check the bar level....................................................passed
-Then verify level...........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Go to Registration Page" name="TC_0001 User type to New Password_There should be at least 1 uppercase char 2" time="16.091">
-<failure message="" type="java.lang.AssertionError"><![CDATA[Given user got to GMI Bank homepage.........................................passed
-Given user click to dropdown button.........................................passed
-Then user click to register button..........................................passed
-And user click to New Password button.......................................passed
-Then user type New "<Aaaa>".................................................passed
-Then check the bar level....................................................passed
-Then verify level...........................................................failed
+    </testcase>
+    <testcase classname="Go to homepage" name="TC003 Employee Selects AccountType" time="20.427">
+        <failure message="expected [Please select account type] but found [CHECKING]" type="java.lang.AssertionError"><![CDATA[Given employee goes to GMI Bank homepage....................................passed
+And user clicks to login icon...............................................passed
+And user clicks to Sign in..................................................passed
+And user click to Username box and send "team21employee"....................passed
+And user click to Password box and send "team21Employee"....................passed
+And user clicks to Sign in button...........................................passed
+And user click to My Operations button......................................passed
+And user click to Manage Accounts button....................................passed
+And user click to Create New Account button.................................passed
+And user selects Account Type and verifies the options......................passed
+And user does not select any option and checks the warning..................failed
 
 StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at gmibank.stepdefinitions.US_003_Registration_Password_sd.verify_level(US_003_Registration_Password_sd.java:82)
-	at ✽.verify level(file:///C:/Users/Administrator/IdeaProjects/gmibankproject/src/test/resources/features/US_003_Registration_Password.feature:15)
+java.lang.AssertionError: expected [Please select account type] but found [CHECKING]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at gmibank.stepdefinitions.EmpAccCreationStepDefinitions.user_does_not_select_any_option_and_checks_the_warning(EmpAccCreationStepDefinitions.java:167)
+	at ✽.user does not select any option and checks the warning(file:///C:/Users/User/IdeaProjects/GmiBankFramework/src/test/resources/features/empAccCreation.feature:45)
 ]]></failure>
-</testcase>
-<testcase classname="Go to Registration Page" name="TC_0002 User type to New Password_There should be at least 1 lowercase char" time="17.897">
-<system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
-Given user click to dropdown button.........................................passed
-Then user click to register button..........................................passed
-And user click to New Password button.......................................passed
-Then user type New "<aAAAAAA>"..............................................passed
-Then check the bar level....................................................passed
-Then verify level...........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Go to Registration Page" name="TC_0003 User type to New Password_There should be at least 1 digit" time="12.684">
-<system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
-Given user click to dropdown button.........................................passed
-Then user click to register button..........................................passed
-And user click to New Password button.......................................passed
-Then user type New "<1aaaaaa>"..............................................passed
-Then check the bar level....................................................passed
-Then verify level...........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Go to Registration Page" name="TC_0004 User type to New Password_There should be  at least 1 special char" time="14.662">
-<system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
-Given user click to dropdown button.........................................passed
-Then user click to register button..........................................passed
-And user click to New Password button.......................................passed
-Then user type New "<.aaaaaa>"..............................................passed
-Then check the bar level....................................................passed
-Then verify level...........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Go to Registration Page" name="TC_0005 User type to New Password_There should be at least 7 chars" time="11.65">
-<system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
-Given user click to dropdown button.........................................passed
-Then user click to register button..........................................passed
-And user click to New Password button.......................................passed
-Then user type New "Aaaaaaa"................................................passed
-Then check the bar level....................................................passed
-Then verify level...........................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Go to Registration Page" name="TC_0005 User type to New Password_There should be at least 7 chars 2" time="11.782">
-<failure message="" type="java.lang.AssertionError"><![CDATA[Given user got to GMI Bank homepage.........................................passed
-Given user click to dropdown button.........................................passed
-Then user click to register button..........................................passed
-And user click to New Password button.......................................passed
-Then user type New "Aaaa12".................................................passed
-Then check the bar level....................................................passed
-Then verify level...........................................................failed
+    </testcase>
+    <testcase classname="Go to homepage" name="TC004 Employee Selects Account Status Type" time="25.791">
+        <failure message="expected [SUSPENDED] but found [SUESPENDED]" type="java.lang.AssertionError"><![CDATA[Given employee goes to GMI Bank homepage....................................passed
+And user clicks to login icon...............................................passed
+And user clicks to Sign in..................................................passed
+And user click to Username box and send "team21employee"....................passed
+And user click to Password box and send "team21Employee"....................passed
+And user clicks to Sign in button...........................................passed
+And user click to My Operations button......................................passed
+And user click to Manage Accounts button....................................passed
+And user click to Create New Account button.................................passed
+And user selects Account Status Type and verifies the options...............failed
+And user does not select any option and gets warning........................skipped
 
 StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at gmibank.stepdefinitions.US_003_Registration_Password_sd.verify_level(US_003_Registration_Password_sd.java:82)
-	at ✽.verify level(file:///C:/Users/Administrator/IdeaProjects/gmibankproject/src/test/resources/features/US_003_Registration_Password.feature:70)
+java.lang.AssertionError: expected [SUSPENDED] but found [SUESPENDED]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at gmibank.stepdefinitions.EmpAccCreationStepDefinitions.user_selects_Account_Status_Type_and_verifies_the_options(EmpAccCreationStepDefinitions.java:182)
+	at ✽.user selects Account Status Type and verifies the options(file:///C:/Users/User/IdeaProjects/GmiBankFramework/src/test/resources/features/empAccCreation.feature:49)
 ]]></failure>
-</testcase>
-<testcase classname="go to Registration Page" name="TC_0001 User should see all account types and balace populated" time="13.457">
-<system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
-And user click to dropdown button...........................................passed
-Then user click to Sign in button...........................................passed
-And user click User name button.............................................passed
-And user type Username "team21customer".....................................passed
-And user click to Password..................................................passed
-And user type Password "team21Customer".....................................passed
-Then user click Sign in.....................................................passed
-Then user click My Operation button.........................................passed
-Then user click Manage Accounts button......................................passed
-Then check all account types................................................passed
-Then check all balance......................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="go to Registration Page" name="TC_0002 User can view transaction" time="13.009">
-<system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
-And user click to dropdown button...........................................passed
-Then user click to Sign in button...........................................passed
-And user click User name button.............................................passed
-And user type Username "team21customer".....................................passed
-And user click to Password..................................................passed
-And user type Password "team21Customer".....................................passed
-Then user click Sign in.....................................................passed
-Then user click My Operation button.........................................passed
-Then user click Manage Accounts button......................................passed
-Then user view transaction..................................................passed
-=======
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.234">
-<testcase classname="Go to homepage" name="TC_001-007 User type several informations" time="19.954">
-<system-out><![CDATA[Given user got to GMI Bank homepage.........................................passed
-And user clik to register box...............................................passed
-And user clik to register button............................................passed
-And user clik to SSn number box and send "454-42-1223"......................passed
-And user click to first name box and send "Hans"............................passed
-And user click to last name box and send "Kern".............................passed
-And user click to address box and send "Ernst Straße 2, 17299 Hamburg"......passed
-And user click to mobile phone number box and send "404-421-2236"...........passed
-And user click to username box and send "hanskern1234"......................passed
-Then user click to email box and send "hanskern@fakemail.com"...............passed
->>>>>>> master
-]]></system-out>
-</testcase>
->>>>>>> master
+    </testcase>
+    <testcase classname="Go to homepage" name="TC005 Selecting employee" time="23.486">
+        <failure message="expected [emrullahd] but found []" type="java.lang.AssertionError"><![CDATA[Given employee goes to GMI Bank homepage....................................passed
+And user clicks to login icon...............................................passed
+And user clicks to Sign in..................................................passed
+And user click to Username box and send "team21employee"....................passed
+And user click to Password box and send "team21Employee"....................passed
+And user clicks to Sign in button...........................................passed
+And user click to My Operations button......................................passed
+And user click to Manage Accounts button....................................passed
+And user click to Create New Account button.................................passed
+And user click to Employee box and select employee as "emrullahd"...........failed
+
+StackTrace:
+java.lang.AssertionError: expected [emrullahd] but found []
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at gmibank.stepdefinitions.EmpAccCreationStepDefinitions.user_click_to_Employee_box_and_select_employee_as(EmpAccCreationStepDefinitions.java:191)
+	at ✽.user click to Employee box and select employee as "emrullahd"(file:///C:/Users/User/IdeaProjects/GmiBankFramework/src/test/resources/features/empAccCreation.feature:54)
+]]></failure>
+    </testcase>
 </testsuite>

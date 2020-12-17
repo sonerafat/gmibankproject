@@ -284,20 +284,6 @@ public class Driver {
 
     }
 
-    public static void waitAndClick(WebElement element, int timeout) {
-        for (int i = 0; i < timeout; i++) {
-            try {
-                element.click();
-                return;
-            } catch (WebDriverException e) {
-                wait(1);
-            }
-        }
-    }
-
-
-
-
     /**
      * Clicks on an element using JavaScript
      *

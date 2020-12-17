@@ -10,8 +10,6 @@ import org.openqa.selenium.Keys;
 
 public class GmiBankStepdefinition {
 
-
-
 //    @Given("user got to GMI Bank homepage")
 //    public void user_got_to_GMI_Bank_homepage() {
 //      Driver.getDriver().get(ConfigReader.getProperty("gmiBank_url"));
