@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class ManageCustomerPage {
     public ManageCustomerPage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -98,6 +100,28 @@ public class ManageCustomerPage {
 
     @FindBy(xpath = "//*[@id=\"root\"]/div/div/div[1]/div/div/div[1]")
     public WebElement  errToast;
+//==============================================================================
+    @FindBy(xpath = "//th")
+    public List<WebElement> thead;
+    @FindBy(xpath = "(//a[@class='btn btn-info btn-sm'])[1]")
+    public WebElement viewButton;
+    @FindBy(xpath = "(//a[@class='btn btn-primary btn-sm'])[1]")
+    public WebElement editButton;
+    @FindBy(xpath = "(//a[@class='btn btn-danger btn-sm'])[1]")
+    public WebElement deleteButton;
+    @FindBy (xpath = "//a[@class='btn btn-primary']")
+    public WebElement customerEditButton;
+    @FindBy(xpath = "//h2")
+    public WebElement text;
+    @FindBy(xpath = "//input[@name='address']")
+    public WebElement addressTextBox;
+    @FindBy(xpath = "//tbody//tr[1]//td[8]")
+    public WebElement address;
+    //div[@id='gmibankfrontendApp.tPCustomer.delete.question']
+    @FindBy(xpath = "(//span)[176]")
+    public WebElement warningMessage;
+
+
 
 
 }
