@@ -220,6 +220,12 @@ public class RegistrationStepDefinitions {
     public void user_verifies_the_mail_message() {
         Assert.assertTrue(inv.emailInvalid.getText().equals(sheet1Obj.getCellData(7,2)));
     }
+    @When("When user clicks user icon")
+    public void when_user_clicks_user_icon() {
+        inv.userIcon.click();
+
+    }
+
 
 
 }

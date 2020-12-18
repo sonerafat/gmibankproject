@@ -1,5 +1,4 @@
 
-
   Feature: Sigin with invalid credentials
     Background: User goes to GMI homepage
       Given user goes to  homepage
