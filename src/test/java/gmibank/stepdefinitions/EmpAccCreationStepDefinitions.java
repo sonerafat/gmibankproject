@@ -30,7 +30,7 @@ public class EmpAccCreationStepDefinitions {
     }
 
     @Given("user click to login icon")
-    public void user_clik_to_login_icon() {
+    public void user_cliks_to_login_icon() {
         loginPage.login_icon.click();
     }
 
