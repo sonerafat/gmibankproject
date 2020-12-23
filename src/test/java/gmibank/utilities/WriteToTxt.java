@@ -103,5 +103,7 @@ public class WriteToTxt {
         } catch(Exception e){
         }
     }
-
+/*
+ " , " + country[i].getName()
+ */
 }

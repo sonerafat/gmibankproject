@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         //plugin = "html:target\\default-cucumber-reports",
         features ="src/test/resources/features",
         glue = "gmibank/stepdefinitions",
-        tags = "@register",
+        tags = "@country",
         dryRun = false
 )
 public class GmiRunner {

@@ -49,8 +49,8 @@ public class EmpAccCreationStepDefinitions {
         Driver.waitAndSendText(loginPage.txt_password, password, 5);
     }
 
-    @Given("user click to Sign in button")
-    public void user_click_to_Sign_in_button() {
+    @Given("user clicks to Sign in button")
+    public void user_clicks_to_Sign_in_button() {
         empAccCreationPage.submit.click();
     }
 
