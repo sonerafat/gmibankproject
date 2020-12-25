@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.992">
-<testcase classname="read all country data" name="_2" time="14.677">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.493">
+<testcase classname="read all country data" name="_2" time="16.188">
 <system-out><![CDATA[Given user go to api end point "https://www.gmibank.com/api/tp-countries"...passed
 And read all countries and write............................................passed
 Then validate countries.....................................................passed
