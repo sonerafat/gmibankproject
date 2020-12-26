@@ -3,18 +3,31 @@ package gmibank.stepdefinitions;
 import gmibank.utilities.ConfigReader;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.junit.CucumberOptions;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.junit.Assert;
 
-import static io.restassured.RestAssured.given;
+import java.util.ArrayList;
+import java.util.List;
 
+import static io.restassured.RestAssured.given;
 public class CreateStatesStepDefinitions {
-    Response responseAll;
+    Response responseAll=  given().
+            accept(ContentType.JSON).
+            auth().
+            oauth2(ConfigReader.getProperty("token")).
+            when().
+            get("https://www.gmibank.com/api/tp-states").then().
+            extract().
+            response();
+    JsonPath jsonPath =responseAll.jsonPath();
+    List<String> statesName = jsonPath.getList("name");
+    List<Integer> statesId =jsonPath.getList("id");
     @Given("user sets the response using api end point {string} using {string} and {string}")
     public void user_sets_the_response_using_api_end_point_using_and(String endpoint, String head, String id) {
-        Response response = given().
+        /*Response response = given().
                 accept(ContentType.JSON).
                 auth().
                 oauth2(ConfigReader.getProperty("token")).
@@ -22,7 +35,9 @@ public class CreateStatesStepDefinitions {
                 get(endpoint).then().
                 extract().
                 response();
-       // response.prettyPrint();
+      // response.prettyPrint();*/
+
+
 
         responseAll= given().
                 contentType(ContentType.JSON).
@@ -34,12 +49,14 @@ public class CreateStatesStepDefinitions {
                 then().
                 extract().
                 response();
-        //responseAll.prettyPrint();
+        responseAll.prettyPrint();
+
+
     }
 
-    @Then("user validates created states using {string}")
-    public void user_validates_created_states_using(String string) {
-        responseAll= given().
+    @Then("user validates created states using {string} and {string}")
+    public void user_validates_created_states_using_and(String string, String stateName) {
+        responseAll = given().
                 accept(ContentType.JSON).
                 auth().
                 oauth2(ConfigReader.getProperty("token")).
@@ -47,21 +64,35 @@ public class CreateStatesStepDefinitions {
                 get(string).then().
                 extract().
                 response();
-        responseAll.prettyPrint();
+        //responseAll.prettyPrint();
 
-        JsonPath jsonPath= responseAll.jsonPath();
+        JsonPath jsonPath = responseAll.jsonPath();
 
+        //System.out.println("IntLastId: "+ lastId);
 
-        String name =jsonPath.getString("name");
-        String id= jsonPath.getString("id");
-
-        Assert.assertTrue(name.contains("Province_0015"));
-        Assert.assertTrue(name.contains("Province_0016"));
-        Assert.assertTrue(id.contains("60586")); //Province_0017
+        //System.out.println(statesId);
 
 
+        Assert.assertTrue(statesName.contains(stateName));
 
+        // System.out.println(statesId.get(statesId.size()-1));
 
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

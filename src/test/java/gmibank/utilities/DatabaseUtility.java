@@ -186,4 +186,23 @@ public class DatabaseUtility {
         int rowCount = resultSet.getRow();
         return rowCount;
     }
+    public static List<Object> getQueryResultLists(String query) {
+        executeQuery(query);
+        List<Object> rowList = new ArrayList<>();
+        ResultSetMetaData rsmd;
+        try {
+            rsmd = resultSet.getMetaData();
+            while (resultSet.next()) {
+                List<Object> row = new ArrayList<>();
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
+                    row.add(resultSet.getObject(i));
+                }
+                rowList.add(row);
+            }
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return rowList;
+    }
 }

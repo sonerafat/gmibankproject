@@ -1,2 +1,186 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" time="0.039"/>
+<testsuite errors="0" failures="15" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="15" time="2.672">
+<testcase classname="Go to Registration Page" name="TC_0001 User type to New Password_There should be at least 1 uppercase char" time="0.247">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+Given user click to dropdown button.........................................skipped
+Then user click to register button..........................................skipped
+And user click to New Password button.......................................skipped
+Then user type New "<Aaaaaaa>"..............................................skipped
+Then check the bar level....................................................skipped
+Then verify level...........................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Go to Registration Page" name="TC_0001 User type to New Password_There should be at least 1 uppercase char 2" time="0.014">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+Given user click to dropdown button.........................................skipped
+Then user click to register button..........................................skipped
+And user click to New Password button.......................................skipped
+Then user type New "<Aaaa>".................................................skipped
+Then check the bar level....................................................skipped
+Then verify level...........................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Go to Registration Page" name="TC_0002 User type to New Password_There should be at least 1 lowercase char" time="0.022">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+Given user click to dropdown button.........................................skipped
+Then user click to register button..........................................skipped
+And user click to New Password button.......................................skipped
+Then user type New "<aAAAAAA>"..............................................skipped
+Then check the bar level....................................................skipped
+Then verify level...........................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Go to Registration Page" name="TC_0003 User type to New Password_There should be at least 1 digit" time="0.034">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+Given user click to dropdown button.........................................skipped
+Then user click to register button..........................................skipped
+And user click to New Password button.......................................skipped
+Then user type New "<1aaaaaa>"..............................................skipped
+Then check the bar level....................................................skipped
+Then verify level...........................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Go to Registration Page" name="TC_0004 User type to New Password_There should be  at least 1 special char" time="0.02">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+Given user click to dropdown button.........................................skipped
+Then user click to register button..........................................skipped
+And user click to New Password button.......................................skipped
+Then user type New "<.aaaaaa>"..............................................skipped
+Then check the bar level....................................................skipped
+Then verify level...........................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Go to Registration Page" name="TC_0005 User type to New Password_There should be at least 7 chars" time="0.028">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+Given user click to dropdown button.........................................skipped
+Then user click to register button..........................................skipped
+And user click to New Password button.......................................skipped
+Then user type New "Aaaaaaa"................................................skipped
+Then check the bar level....................................................skipped
+Then verify level...........................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="Go to Registration Page" name="TC_0005 User type to New Password_There should be at least 7 chars 2" time="0.016">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+Given user click to dropdown button.........................................skipped
+Then user click to register button..........................................skipped
+And user click to New Password button.......................................skipped
+Then user type New "Aaaa12".................................................skipped
+Then check the bar level....................................................skipped
+Then verify level...........................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="go to Registration Page" name="TC_0001 User should see all account types and balace populated" time="0.021">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+And user click to dropdown button...........................................skipped
+Then user click to Sign in button...........................................skipped
+And user click User name button.............................................skipped
+And user type Username "team21customer".....................................skipped
+And user click to Password..................................................skipped
+And user type Password "team21Customer".....................................skipped
+Then user click Sign in.....................................................skipped
+Then user click My Operation button.........................................skipped
+Then user click Manage Accounts button......................................skipped
+Then check all account types................................................skipped
+Then check all balance......................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="go to Registration Page" name="TC_0002 User can view transaction" time="0.014">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+And user click to dropdown button...........................................skipped
+Then user click to Sign in button...........................................skipped
+And user click User name button.............................................skipped
+And user type Username "team21customer".....................................skipped
+And user click to Password..................................................skipped
+And user type Password "team21Customer".....................................skipped
+Then user click Sign in.....................................................skipped
+Then user click My Operation button.........................................skipped
+Then user click Manage Accounts button......................................skipped
+Then user view transaction..................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="go to Registration page" name="Admin can activate a role as user" time="0.036">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+And user click to dropdown button...........................................skipped
+Then user click to Sign in button...........................................skipped
+And user click User name button.............................................skipped
+And user type Username "teamadmin21"........................................skipped
+And user click to Password..................................................skipped
+And user type Password "teamAdmin21"........................................skipped
+Then user click Sign in.....................................................skipped
+And Click on Administration button..........................................undefined
+And Click on User Management button.........................................undefined
+And Click on deactivated button as user.....................................undefined
+]]></failure>
+</testcase>
+<testcase classname="go to Registration page" name="Admin can activate a role as employee" time="0.011">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+And user click to dropdown button...........................................skipped
+Then user click to Sign in button...........................................skipped
+And user click User name button.............................................skipped
+And user type Username "teamadmin21"........................................skipped
+And user click to Password..................................................skipped
+And user type Password "teamAdmin21"........................................skipped
+Then user click Sign in.....................................................skipped
+And Click on Administration button..........................................undefined
+And Click on User Management button.........................................undefined
+And Click on deactivated button as employee.................................undefined
+]]></failure>
+</testcase>
+<testcase classname="go to Registration page" name="Admin can activate a role as manager" time="0.019">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+And user click to dropdown button...........................................skipped
+Then user click to Sign in button...........................................skipped
+And user click User name button.............................................skipped
+And user type Username "teamadmin21"........................................skipped
+And user click to Password..................................................skipped
+And user type Password "teamAdmin21"........................................skipped
+Then user click Sign in.....................................................skipped
+And Click on Administration button..........................................undefined
+And Click on User Management button.........................................undefined
+And Click on deactivated button as manager..................................undefined
+]]></failure>
+</testcase>
+<testcase classname="go to Registration page" name="Admin can activate a role as admin" time="0.026">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+And user click to dropdown button...........................................skipped
+Then user click to Sign in button...........................................skipped
+And user click User name button.............................................skipped
+And user type Username "teamadmin21"........................................skipped
+And user click to Password..................................................skipped
+And user type Password "teamAdmin21"........................................skipped
+Then user click Sign in.....................................................skipped
+And Click on Administration button..........................................undefined
+And Click on User Management button.........................................undefined
+And Click on deactivated button as admin....................................undefined
+]]></failure>
+</testcase>
+<testcase classname="go to Registration page" name="Admin can view all user info (admin, manager, employee and user)" time="0.044">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+And user click to dropdown button...........................................skipped
+Then user click to Sign in button...........................................skipped
+And user click User name button.............................................skipped
+And user type Username "teamadmin21"........................................skipped
+And user click to Password..................................................skipped
+And user type Password "teamAdmin21"........................................skipped
+Then user click Sign in.....................................................skipped
+And Click on Administration button..........................................undefined
+And Click on User Management button.........................................undefined
+And Admin should see all View button........................................undefined
+]]></failure>
+</testcase>
+<testcase classname="go to Registration page" name="Admin can edit all user info (admin, manager, employee and user)" time="0.022">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user got to GMI Bank homepage.........................................undefined
+And user click to dropdown button...........................................skipped
+Then user click to Sign in button...........................................skipped
+And user click User name button.............................................skipped
+And user type Username "teamadmin21"........................................skipped
+And user click to Password..................................................skipped
+And user type Password "teamAdmin21"........................................skipped
+Then user click Sign in.....................................................skipped
+And Click on Administration button..........................................undefined
+And Click on User Management button.........................................undefined
+And Admin should see all Edit button........................................undefined
+]]></failure>
+</testcase>
+</testsuite>

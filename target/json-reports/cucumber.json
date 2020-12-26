@@ -1,1 +1,2396 @@
-[]
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:44.182Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "TC_0001 User type to New Password_There should be at least 1 uppercase char",
+        "description": "",
+        "id": "go-to-registration-page;tc-0001-user-type-to-new-password-there-should-be-at-least-1-uppercase-char;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user click to register button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_register_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user click to New Password button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_New_Password_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user type New \"\u003cAaaaaaa\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cAaaaaaa\u003e\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_type_New(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "check the bar level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.check_the_bar_level()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "verify level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.verify_level()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:44.505Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "TC_0001 User type to New Password_There should be at least 1 uppercase char",
+        "description": "",
+        "id": "go-to-registration-page;tc-0001-user-type-to-new-password-there-should-be-at-least-1-uppercase-char;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user click to register button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_register_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user click to New Password button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_New_Password_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user type New \"\u003cAaaa\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cAaaa\u003e\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_type_New(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "check the bar level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.check_the_bar_level()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "verify level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.verify_level()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:44.549Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "TC_0002 User type to New Password_There should be at least 1 lowercase char",
+        "description": "",
+        "id": "go-to-registration-page;tc-0002-user-type-to-new-password-there-should-be-at-least-1-lowercase-char;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "user click to register button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_register_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "user click to New Password button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_New_Password_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "user type New \"\u003caAAAAAA\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003caAAAAAA\u003e\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_type_New(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "check the bar level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.check_the_bar_level()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "verify level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.verify_level()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:44.602Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "TC_0003 User type to New Password_There should be at least 1 digit",
+        "description": "",
+        "id": "go-to-registration-page;tc-0003-user-type-to-new-password-there-should-be-at-least-1-digit;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 37,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": "user click to register button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_register_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": "user click to New Password button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_New_Password_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "user type New \"\u003c1aaaaaa\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c1aaaaaa\u003e\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_type_New(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": "check the bar level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.check_the_bar_level()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": "verify level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.verify_level()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:44.679Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 59,
+        "name": "TC_0004 User type to New Password_There should be  at least 1 special char",
+        "description": "",
+        "id": "go-to-registration-page;tc-0004-user-type-to-new-password-there-should-be--at-least-1-special-char;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 51,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 52,
+            "name": "user click to register button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_register_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 53,
+            "name": "user click to New Password button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_New_Password_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 54,
+            "name": "user type New \"\u003c.aaaaaa\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003c.aaaaaa\u003e\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_type_New(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 55,
+            "name": "check the bar level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.check_the_bar_level()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 56,
+            "name": "verify level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.verify_level()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:44.742Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 73,
+        "name": "TC_0005 User type to New Password_There should be at least 7 chars",
+        "description": "",
+        "id": "go-to-registration-page;tc-0005-user-type-to-new-password-there-should-be-at-least-7-chars;;2",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "user click to register button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_register_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "user click to New Password button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_New_Password_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "user type New \"Aaaaaaa\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Aaaaaaa\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_type_New(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 69,
+            "name": "check the bar level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.check_the_bar_level()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 70,
+            "name": "verify level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.verify_level()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:44.799Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 74,
+        "name": "TC_0005 User type to New Password_There should be at least 7 chars",
+        "description": "",
+        "id": "go-to-registration-page;tc-0005-user-type-to-new-password-there-should-be-at-least-7-chars;;3",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "skipped"
+            },
+            "line": 65,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "skipped"
+            },
+            "line": 66,
+            "name": "user click to register button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_register_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 67,
+            "name": "user click to New Password button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_New_Password_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "user type New \"Aaaa12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Aaaa12\"",
+                  "offset": 14
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_type_New(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "skipped"
+            },
+            "line": 69,
+            "name": "check the bar level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.check_the_bar_level()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 70,
+            "name": "verify level",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.verify_level()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      }
+    ],
+    "name": "Go to Registration Page",
+    "description": "",
+    "id": "go-to-registration-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_003_Registration_Password.feature",
+    "tags": [
+      {
+        "name": "@registrationpage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click to Sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user click User name button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_User_name_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user type Username \"team21customer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team21customer\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click to Password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user type Password \"team21Customer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team21Customer\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user click Sign in",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_Sign_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user click My Operation button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_My_Operation_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user click Manage Accounts button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_Manage_Accounts_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:44.847Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "TC_0001 User should see all account types and balace populated",
+        "description": "",
+        "id": "go-to-registration-page;tc-0001-user-should-see-all-account-types-and-balace-populated",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "check all account types",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.check_all_account_types()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "check all balance",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.check_all_balance()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click to Sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user click User name button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_User_name_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user type Username \"team21customer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team21customer\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click to Password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user type Password \"team21Customer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"team21Customer\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user click Sign in",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_Sign_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "user click My Operation button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_My_Operation_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "user click Manage Accounts button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_Manage_Accounts_button()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:44.891Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "TC_0002 User can view transaction",
+        "description": "",
+        "id": "go-to-registration-page;tc-0002-user-can-view-transaction",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "user view transaction",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_view_transaction()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      }
+    ],
+    "name": "go to Registration Page",
+    "description": "",
+    "id": "go-to-registration-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_015_Manage_Account.feature",
+    "tags": [
+      {
+        "name": "@registrationpage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click to Sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user click User name button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_User_name_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user type Username \"teamadmin21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teamadmin21\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click to Password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user type Password \"teamAdmin21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teamAdmin21\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user click Sign in",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_Sign_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "Click on Administration button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Click on User Management button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:44.931Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Admin can activate a role as user",
+        "description": "",
+        "id": "go-to-registration-page;admin-can-activate-a-role-as-user",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "Click on deactivated button as user",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click to Sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user click User name button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_User_name_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user type Username \"teamadmin21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teamadmin21\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click to Password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user type Password \"teamAdmin21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teamAdmin21\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user click Sign in",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_Sign_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "Click on Administration button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Click on User Management button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:44.987Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Admin can activate a role as employee",
+        "description": "",
+        "id": "go-to-registration-page;admin-can-activate-a-role-as-employee",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "Click on deactivated button as employee",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click to Sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user click User name button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_User_name_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user type Username \"teamadmin21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teamadmin21\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click to Password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user type Password \"teamAdmin21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teamAdmin21\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user click Sign in",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_Sign_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "Click on Administration button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Click on User Management button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:45.010Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Admin can activate a role as manager",
+        "description": "",
+        "id": "go-to-registration-page;admin-can-activate-a-role-as-manager",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "Click on deactivated button as manager",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click to Sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user click User name button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_User_name_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user type Username \"teamadmin21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teamadmin21\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click to Password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user type Password \"teamAdmin21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teamAdmin21\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user click Sign in",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_Sign_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "Click on Administration button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Click on User Management button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:45.085Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Admin can activate a role as admin",
+        "description": "",
+        "id": "go-to-registration-page;admin-can-activate-a-role-as-admin",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "Click on deactivated button as admin",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click to Sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user click User name button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_User_name_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user type Username \"teamadmin21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teamadmin21\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click to Password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user type Password \"teamAdmin21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teamAdmin21\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user click Sign in",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_Sign_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "Click on Administration button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Click on User Management button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:45.201Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Admin can view all user info (admin, manager, employee and user)",
+        "description": "",
+        "id": "go-to-registration-page;admin-can-view-all-user-info-(admin--manager--employee-and-user)",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 23,
+            "name": "Admin should see all View button",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "User go to GMI Bank homepage",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user got to GMI Bank homepage",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "user click to dropdown button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_003_Registration_Password_sd.user_click_to_dropdown_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "user click to Sign in button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Sign_in_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user click User name button",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_User_name_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user type Username \"teamadmin21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teamadmin21\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Username(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user click to Password",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_to_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "user type Password \"teamAdmin21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"teamAdmin21\"",
+                  "offset": 19
+                }
+              ],
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_type_Password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user click Sign in",
+            "match": {
+              "location": "gmibank.stepdefinitions.US_015_Manege_Account_sd.user_click_Sign_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "Click on Administration button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "Click on User Management button",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-26T14:30:45.286Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Admin can edit all user info (admin, manager, employee and user)",
+        "description": "",
+        "id": "go-to-registration-page;admin-can-edit-all-user-info-(admin--manager--employee-and-user)",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "gmibank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 25,
+            "name": "Admin should see all Edit button",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registrationpage"
+          }
+        ]
+      }
+    ],
+    "name": "go to Registration page",
+    "description": "",
+    "id": "go-to-registration-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_17EmrahBey.feature",
+    "tags": [
+      {
+        "name": "@registrationpage",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
