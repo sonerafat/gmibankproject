@@ -1,5 +1,4 @@
 package gmibank.stepdefinitions;
-
 import com.itextpdf.layout.element.*;
 import com.itextpdf.io.image.ImageData;
 import com.itextpdf.io.image.ImageDataFactory;
@@ -15,18 +14,13 @@ import com.itextpdf.layout.element.Table;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import gmibank.utilities.ConfigReader;
-import gmibank.utilities.PdfGenerator;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-
-import javax.swing.*;
-import javax.swing.text.View;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
-
 import static io.restassured.RestAssured.given;
 
 public class US_030_PrintUsersStepDefinitions {
