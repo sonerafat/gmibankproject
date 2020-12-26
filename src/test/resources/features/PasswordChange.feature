@@ -52,6 +52,6 @@ Feature: Password Strength
     Examples:
       | passwordUpdatesData |
       | Aaaaaaa             |
-      | Aaaa12              |
+      | AaaaA12              |
       | Aaaa..aa12          |
       | Aaddasdsa           |
