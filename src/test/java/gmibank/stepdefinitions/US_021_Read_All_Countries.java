@@ -1,48 +1,56 @@
 package gmibank.stepdefinitions;
 
-import com.github.javafaker.Country;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import gmibank.pojos.Country;
 import gmibank.pojos.Customer;
 import gmibank.utilities.ConfigReader;
+import gmibank.utilities.ReadTxt;
+import gmibank.utilities.WriteToTxt;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
-import static io.restassured.RestAssured.*;
-
+import org.testng.Assert;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
+import static io.restassured.RestAssured.given;
 
 public class US_021_Read_All_Countries {
     Response response;
-    Customer[] customers;
+    Customer[] customer;
+    List<String> expected;
+    Country[]country;
+    List<String> expectedC;
 
-    @Given("user set response using api end point {string}")
-    public void user_set_response_using_api_end_point(String uri) {
-       response = given().headers("Authorization", "Bearer " + ConfigReader.getProperty("api_bearer_token"),
-               "Content-Type", ContentType.JSON, "Accept", ContentType.JSON)
-               .when()
-               .get().then().contentType(ContentType.JSON)
-               .extract().response();
-
-       response.prettyPrint();
+    @Given("user go to api end point {string}")
+    public void user_go_to_api_end_point(String string) {
+        response=given().auth().oauth2(ConfigReader.getProperty("api_bearer_token")).contentType(ContentType.JSON).when()
+                .get("https://www.gmibank.com/api/tp-countries").then().contentType(ContentType.JSON).extract().response();
 
     }
 
-    @Given("user verfy all countries from api with data set")
-    public void user_verfy_all_countries_from_api_with_data_set(io.cucumber.datatable.DataTable dataTable) {
-        // Write code here that turns the phrase above into concrete actions
-        // For automatic transformation, change DataTable to one of
-        // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-        // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-        // Double, Byte, Short, Long, BigInteger or BigDecimal.
-        //
-        // For other transformations you can register a DataTableType.
-        throw new io.cucumber.java.PendingException();
+    @Given("read all countries and write")
+    public void read_all_countries_and_write() throws IOException {
+
+        ObjectMapper objectMapper = new ObjectMapper();
+        country = objectMapper.readValue(response.asString(), Country[].class);
+        for(int i=0;i<country.length;i++){
+            System.out.println(country[i].getId()+" | " + country[i].getName());
+        }
+        WriteToTxt.saveAllCountryId("src\\test\\java\\gmibank\\test-data\\countryId.txt", country);
+    }
+    @Then("validate countries")
+    public void validate_countries() {
+        List<String> expCount = new ArrayList<>();
+        for (int i=0;i<country.length;i++){
+            expCount.add(String.valueOf(country[i].getId()));
+        }
+        List<String> allCount = ReadTxt.returnCountryId("src\\test\\java\\gmibank\\test-data\\countryId.txt");
+        Assert.assertEquals(expCount, allCount);
+
     }
 
-    @Given("user verify all countries one by one from data set {string}")
-    public void user_verify_all_countries_one_by_one_from_data_set(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
 }
+
+

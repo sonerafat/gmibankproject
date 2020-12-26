@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-25T18:04:47.886Z",
+        "start_timestamp": "2020-12-26T14:19:28.182Z",
         "before": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 9684000000,
+              "duration": 8988000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5509000000,
+              "duration": 4509000000,
               "status": "passed"
             },
             "line": 4,
@@ -47,31 +47,31 @@
                   "offset": 25
                 }
               ],
-              "location": "gmibank.stepdefinitions.ApiCountryStepDefinition.user_go_to_api_end_point(java.lang.String)"
+              "location": "gmibank.stepdefinitions.US_021_Read_All_Countries.user_go_to_api_end_point(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 800000000,
+              "duration": 507000000,
               "status": "passed"
             },
             "line": 5,
             "name": "read all countries and write",
             "match": {
-              "location": "gmibank.stepdefinitions.ApiCountryStepDefinition.read_all_countries_and_write()"
+              "location": "gmibank.stepdefinitions.US_021_Read_All_Countries.read_all_countries_and_write()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 21000000,
+              "duration": 17000000,
               "status": "passed"
             },
             "line": 6,
             "name": "validate countries",
             "match": {
-              "location": "gmibank.stepdefinitions.ApiCountryStepDefinition.validate_countries()"
+              "location": "gmibank.stepdefinitions.US_021_Read_All_Countries.validate_countries()"
             },
             "keyword": "Then "
           }
@@ -87,7 +87,7 @@
     "description": "",
     "id": "read-all-country-data",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/apicountry.feature",
+    "uri": "file:src/test/resources/features/US_021_Read_All_Countries.feature",
     "tags": [
       {
         "name": "@country",

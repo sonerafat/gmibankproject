@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/apicountry.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/US_021_Read_All_Countries.feature");
 formatter.feature({
   "name": "read all country data",
   "description": "",
@@ -27,7 +27,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.ApiCountryStepDefinition.user_go_to_api_end_point(java.lang.String)"
+  "location": "gmibank.stepdefinitions.US_021_Read_All_Countries.user_go_to_api_end_point(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -37,7 +37,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.ApiCountryStepDefinition.read_all_countries_and_write()"
+  "location": "gmibank.stepdefinitions.US_021_Read_All_Countries.read_all_countries_and_write()"
 });
 formatter.result({
   "status": "passed"
@@ -47,7 +47,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.match({
-  "location": "gmibank.stepdefinitions.ApiCountryStepDefinition.validate_countries()"
+  "location": "gmibank.stepdefinitions.US_021_Read_All_Countries.validate_countries()"
 });
 formatter.result({
   "status": "passed"
